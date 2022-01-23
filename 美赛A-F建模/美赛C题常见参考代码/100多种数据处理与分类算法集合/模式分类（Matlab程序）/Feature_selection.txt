@@ -1,0 +1,9 @@
+Exhaustive_Feature_Selection@Out dim, classifier, classifier params@[2,'LS',[]]@S
+Genetic_Culling@%groups, Out dim, classifier, classifier params@[0.1,2,'LS',[]]@S 
+HDR@Out dimension@2@S
+ICA@Out dimension, Convergence rate:@[2, 1e-1]@S
+Information_based_selection@Out dimension@2@S
+MDS@Method, Out dimension, Convergence rate@['ee', 2, 0.1]@S
+NLCA@Out dimension, Number of hidden units:@[2, 5]@S
+PCA@Out dimension@2@S
+Sequential_Feature_Selection@Type, Out dim, classifier, classifier params@['Backward',2,'LS',[]]@

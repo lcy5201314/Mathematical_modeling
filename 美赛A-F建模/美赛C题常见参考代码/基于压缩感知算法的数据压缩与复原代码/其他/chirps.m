@@ -1,0 +1,26 @@
+
+clc;
+clear all; 
+t=0:0.001:2; 
+y=chirp(t,0,1,150); 
+subplot(2,3,1);spectrogram(y,256,250,256,1E3,'yaxis'); 
+xlabel('t=0:0.001:2 采样时间'); 
+t=-2:0.01:2; 
+y=chirp(t,100,1,200,'quadratic'); 
+subplot(2,3,2);spectrogram(y,128,120,128,1E3,'yaxis'); 
+xlabel('t=-2:0.001:2 采样时间'); 
+t=-1:0.01:1; 
+f0=100;f1=400; 
+y=chirp(t,f0,1,f1,'q',[],'convex'); 
+subplot(2,3,3);spectrogram(y,256,200,256,1000,'yaxis'); 
+xlabel('t=-1:0.001:1 采样时间'); 
+t=0:0.01:1; 
+f0=100;f1=25; 
+y=chirp(t,f0,1,f1,'q',[],'concave'); 
+subplot(2,3,4);spectrogram(y,hanning(256),128,256,1000,'yaxis'); 
+xlabel('t=0:0.001:1 采样时间'); 
+t=0:0.01:10; 
+f0=10;f1=400; 
+y=chirp(t,f0,10,f1,'logarithmic'); 
+subplot(2,3,5);spectrogram(y,256,200,256,1000,'yaxis'); 
+xlabel('t=0:0.001:10 采样时间'); 

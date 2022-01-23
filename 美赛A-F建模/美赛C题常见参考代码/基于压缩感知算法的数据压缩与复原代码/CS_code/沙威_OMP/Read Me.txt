@@ -1,0 +1,10 @@
+
+沙威的个人主页：
+http://www.eee.hku.hk/~wsha/
+
+沙威的资料下载地址：
+http://www.eee.hku.hk/~wsha/Freecode/freecode.htm
+
+CS_OMP的信号是一个向量；
+Wavelet_OMP的信号是图像；
+文章《Compressive_Sensing_沙威》是作者的一些见解。

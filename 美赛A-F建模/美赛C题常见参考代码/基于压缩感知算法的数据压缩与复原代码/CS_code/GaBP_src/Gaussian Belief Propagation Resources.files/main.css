@@ -1,0 +1,48 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: arial
+}
+P A {
+	COLOR: blue; TEXT-DECORATION: none
+}
+P A:hover {
+	COLOR: blue; TEXT-DECORATION: underline
+}
+.text {
+	WIDTH: 600px
+}
+DT {
+	FONT-WEIGHT: bold
+}
+DD {
+	WIDTH: 600px
+}
+.bluebg {
+	BACKGROUND-COLOR: #3999e7
+}
+#header {
+	FONT-WEIGHT: bold; FONT-SIZE: 30px; Z-INDEX: 1; LEFT: 60px; COLOR: white; FONT-FAMILY: arial; POSITION: absolute; TOP: 30px; FONT-VARIANT: small-caps
+}
+.lab {
+	Z-INDEX: 1; RIGHT: 10px; POSITION: absolute; TOP: 10px
+}
+.laba {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: white; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.laba:hover {
+	TEXT-DECORATION: underline
+}
+A.sidebar {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; MARGIN-LEFT: 10px; COLOR: #3999e7; FONT-FAMILY: arial; FONT-VARIANT: small-caps; TEXT-DECORATION: none
+}
+A.sidebar:hover {
+	COLOR: #3999e7; TEXT-DECORATION: underline
+}
+.credit {
+	FONT-SIZE: 10px; COLOR: black; TEXT-ALIGN: center
+}
+A.credit {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.credit:hover {
+	COLOR: black; TEXT-DECORATION: underline
+}

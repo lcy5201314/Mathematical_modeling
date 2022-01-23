@@ -1,0 +1,2628 @@
+From: <ÓÉ Microsoft Internet Explorer 5 ±£´æ>
+Subject: The MathWorks - 1-18GTU: Why do I get an error in MATLAB 6.0 (R12) where I got a warning in R11 with reference to uninitialized variables?
+Date: Mon, 28 Nov 2005 16:18:16 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_000D_01C5F437.56C58110";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1106
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/support/solutions/data/1-18GTU.html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML lang=3Den><HEAD><TITLE>The MathWorks - 1-18GTU: Why do I get an =
+error in MATLAB 6.0 (R12) where I got a warning in R11 with reference to =
+uninitialized variables?</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1"><!-- =
+request.URI=3D/support/solutions/data/1-18GTU.html --><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- =
+request.locale.language=3Den --><!-- request.locale.country=3D --><!-- =
+isIE=3D${useragent.isIE?string} --><!-- =
+isIEandWindows=3D${useragent.isIEandWindows?string} --><!-- =
+isNN4=3D${useragent.isNN4?string} --><LINK=20
+href=3D"http://www.mathworks.com/includes/css/ie6_up.css" =
+type=3Dtext/css=20
+rel=3Dstylesheet><LINK =
+href=3D"http://www.mathworks.com/includes/css/site4.css"=20
+type=3Dtext/css rel=3Dstylesheet><LINK media=3Dprint=20
+href=3D"http://www.mathworks.com/includes/css/print.css" type=3Dtext/css =
+
+rel=3Dstylesheet>
+<SCRIPT language=3DJavaScript1.3=20
+type=3Dtext/javascript>var host_pre =3D "http://www";</SCRIPT>
+
+<SCRIPT language=3DJavaScript1.3=20
+src=3D"http://www.mathworks.com/includes_content/jscript/popup_menus/popu=
+p_menus.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavaScript1.3=20
+src=3D"http://www.mathworks.com/includes_content/jscript/global_nav/globa=
+l_nav_en.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavaScript1.3=20
+src=3D"http://www.mathworks.com/includes/jscript/local_nav.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavaScript1.3=20
+src=3D"http://www.mathworks.com/includes/jscript/common.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<META content=3D"MSHTML 6.00.2800.1106" name=3DGENERATOR></HEAD>
+<BODY><A tabIndex=3D1=20
+href=3D"http://www.mathworks.com/support/solutions/data/1-18GTU.html#cont=
+ent"><IMG=20
+id=3Dcontent_skiplink height=3D1 alt=3D"Skip to Main Content"=20
+src=3D"http://www.mathworks.com/images/pixelclear.gif" width=3D1 =
+border=3D0></A> <A=20
+tabIndex=3D2=20
+href=3D"http://www.mathworks.com/support/solutions/data/1-18GTU.html#sear=
+chskip"><IMG=20
+id=3Dsearch_skiplink height=3D1 alt=3D"Skip to Search"=20
+src=3D"http://www.mathworks.com/images/pixelclear.gif" width=3D1 =
+border=3D0></A>=20
+<DIV id=3Dglobaltop2><IMG id=3Dprint_logo height=3D72 alt=3D"MathWorks =
+Logo"=20
+src=3D"http://www.mathworks.com/includes/images/global_nav/printable_head=
+er.gif"=20
+width=3D355> <A =
+href=3D"http://www.mathworks.com/index.html?ref=3Dlogo"><IMG=20
+id=3Dlogopixel height=3D60 alt=3D""=20
+src=3D"http://www.mathworks.com/images/pixelclear.gif" width=3D230></A>=20
+<DIV id=3Dptools2><A=20
+href=3D"http://www.mathworks.com/index.html?ref=3Dpt">Home</A>&nbsp;|&nbs=
+p;<A=20
+onmouseover=3D"fireMenu('WorldwideGlobal',this,'r')"=20
+href=3D"http://www.mathworks.com/company/worldwide/">&nbsp;Select=20
+Country&nbsp;<IMG id=3Dcountry_arrow alt=3D"Choose Country"=20
+src=3D"http://www.mathworks.com/includes/images/global_nav/pic_countryarr=
+ow_off.gif">&nbsp;</A>&nbsp;|&nbsp;<A=20
+href=3D"http://www.mathworks.com/company/aboutus/contact_us/">&nbsp;Conta=
+ct=20
+Us&nbsp;</A>&nbsp;|&nbsp;<A=20
+onmouseover=3D"mouseover(this,document.getElementById('pic_cart'), =
+'/includes/images/global_nav/pic_cart_on.gif')"=20
+href=3D"http://www.mathworks.com/store/">&nbsp;<IMG id=3Dpic_cart =
+alt=3DCart=20
+src=3D"http://www.mathworks.com/includes/images/global_nav/pic_cart_off.g=
+if"=20
+align=3Dmiddle>&nbsp;Store&nbsp;</A><A name=3Dsearchskip></A>=20
+<FORM id=3Dsite_search action=3D/cgi-bin/texis/webinator/search/ =
+method=3Dget><INPUT=20
+type=3Dhidden value=3DMSS name=3Ddb><INPUT type=3Dhidden value=3Dpage =
+name=3Dprox><INPUT=20
+type=3Dhidden value=3D750 name=3Drorder><INPUT type=3Dhidden value=3D750 =
+name=3Drprox><INPUT=20
+type=3Dhidden value=3D500 name=3Drdfreq><INPUT type=3Dhidden value=3D500 =
+
+name=3Drwfreq><INPUT type=3Dhidden value=3D250 name=3Drlead><INPUT =
+type=3Dhidden value=3D0=20
+name=3Dsufs><INPUT type=3Dhidden value=3Dr name=3Dorder><INPUT =
+type=3Dhidden value=3D1=20
+name=3Dis_summary_on><INPUT type=3Dhidden value=3D10 =
+name=3DResultCount><LABEL=20
+id=3Dsearch_label for=3Dsearch_field>Search</LABEL>&nbsp;<INPUT =
+id=3Dsearch_field=20
+size=3D12 name=3Dquery>&nbsp;<INPUT id=3Dsearchbutton type=3Dsubmit =
+value=3DSearch name=3DsubmitButtonName></FORM></DIV><IMG=20
+id=3Dpixelfade alt=3D""=20
+src=3D"http://www.mathworks.com/includes/images/global_nav/horo_line_full=
+.gif">=20
+<DIV id=3Daccess2><A=20
+href=3D"http://www.mathworks.com/accesslogin/createProfile.do">Create=20
+Account</A>&nbsp;|&nbsp;<A=20
+href=3D"http://www.mathworks.com/accesslogin/login.do?uri=3D/support/solu=
+tions/data/1-18GTU.html">Log=20
+In</A> </DIV></DIV>
+<TABLE id=3Dtopnav cellSpacing=3D0 cellPadding=3D0 width=3D778 =
+summary=3D"top navigation"=20
+border=3D0>
+  <TBODY>
+  <TR id=3Dtopnavitems>
+    <TD id=3Dtcell1 onmouseover=3DtopNavHover(this.id)=20
+    onclick=3D"document.location=3D'http://www.mathworks.com/products/'" =
+
+    onmouseout=3DtopNavHoverOff(this.id) align=3Dmiddle><A id=3Dtmenu1=20
+      onclick=3D"return false" =
+href=3D"http://www.mathworks.com/products/">Products=20
+      &amp; Services</A> </TD>
+    <TD id=3Dtcell2 onmouseover=3DtopNavHover(this.id)=20
+    =
+onclick=3D"document.location=3D'http://www.mathworks.com/industries/'"=20
+    onmouseout=3DtopNavHoverOff(this.id) align=3Dmiddle><A id=3Dtmenu2=20
+      onclick=3D"return false"=20
+      href=3D"http://www.mathworks.com/industries/">Industries</A> </TD>
+    <TD id=3Dtcell3 onmouseover=3DtopNavHover(this.id)=20
+    onclick=3D"document.location=3D'http://www.mathworks.com/academia/'" =
+
+    onmouseout=3DtopNavHoverOff(this.id) align=3Dmiddle><A id=3Dtmenu3=20
+      onclick=3D"return false"=20
+      href=3D"http://www.mathworks.com/academia/">Academia</A> </TD>
+    <TD class=3Dactivebg id=3Dtcell4 onmouseover=3DtopNavHover(this.id)=20
+    onclick=3D"document.location=3D'http://www.mathworks.com/support/'"=20
+    onmouseout=3DtopNavHoverOff(this.id) align=3Dmiddle><A id=3Dtmenu4=20
+      onclick=3D"return false"=20
+      href=3D"http://www.mathworks.com/support/">Support</A> </TD>
+    <TD id=3Dtcell5 onmouseover=3DtopNavHover(this.id)=20
+    =
+onclick=3D"document.location=3D'http://www.mathworks.com/matlabcentral/'"=
+=20
+    onmouseout=3DtopNavHoverOff(this.id) align=3Dmiddle><A id=3Dtmenu5=20
+      onclick=3D"return false" =
+href=3D"http://www.mathworks.com/matlabcentral/">User=20
+      Community</A> </TD>
+    <TD id=3Dtcell6 onmouseover=3DtopNavHover(this.id)=20
+    onclick=3D"document.location=3D'http://www.mathworks.com/company/'"=20
+    onmouseout=3DtopNavHoverOff(this.id) align=3Dmiddle><A id=3Dtmenu6=20
+      onclick=3D"return false"=20
+      href=3D"http://www.mathworks.com/company/">Company</A> </TD></TR>
+  <TR>
+    <TD><IMG height=3D3 alt=3D""=20
+      =
+src=3D"http://www.mathworks.com/includes/images/global_nav/nav_inactive.g=
+if"=20
+      width=3D"100%"></TD>
+    <TD><IMG height=3D3 alt=3D""=20
+      =
+src=3D"http://www.mathworks.com/includes/images/global_nav/nav_inactive.g=
+if"=20
+      width=3D"100%"></TD>
+    <TD><IMG height=3D3 alt=3D""=20
+      =
+src=3D"http://www.mathworks.com/includes/images/global_nav/nav_inactive.g=
+if"=20
+      width=3D"100%"></TD>
+    <TD><IMG height=3D3 alt=3D""=20
+      =
+src=3D"http://www.mathworks.com/includes/images/global_nav/nav_active.gif=
+"=20
+      width=3D"100%"></TD>
+    <TD><IMG height=3D3 alt=3D""=20
+      =
+src=3D"http://www.mathworks.com/includes/images/global_nav/nav_inactive.g=
+if"=20
+      width=3D"100%"></TD>
+    <TD><IMG height=3D3 alt=3D""=20
+      =
+src=3D"http://www.mathworks.com/includes/images/global_nav/nav_inactive.g=
+if"=20
+      width=3D"100%"></TD></TR></TBODY></TABLE>
+<TABLE id=3Dmainframe cellSpacing=3D0 cellPadding=3D0 width=3D779 =
+summary=3Dlayout=20
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD id=3Dleftnavcol vAlign=3Dtop width=3D160>
+      <P>&nbsp;</P>
+      <TABLE id=3Dleftnav cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+        <TBODY>
+        <TR id=3Dlmenu0>
+          <TD class=3Dinactive onmouseover=3D"this.className=3D'hover';" =
+
+          onclick=3D"document.location=3D'/support/index.html'"=20
+          onmouseout=3D"this.className=3D'inactive'"><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- =
+action=3D/support/index.html --><A=20
+            onclick=3D"return false"=20
+            href=3D"http://www.mathworks.com/support/index.html">Support =
+
+            Overview</A> </TD></TR>
+        <TR id=3Dlmenu1>
+          <TD class=3Dinactive onmouseover=3D"this.className=3D'hover';" =
+
+          onclick=3D"document.location=3D'/support/install.html'"=20
+          onmouseout=3D"this.className=3D'inactive'"><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- =
+action=3D/support/install.html --><A=20
+            onclick=3D"return false"=20
+            =
+href=3D"http://www.mathworks.com/support/install.html">Installation=20
+            &amp; Licensing</A> </TD></TR>
+        <TR id=3Dlmenu2>
+          <TD class=3Dactive onmouseover=3D"this.className=3D'hover';"=20
+          onclick=3D"document.location=3D'/support/product/'"=20
+          onmouseout=3D"this.className=3D'active'"><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- =
+action=3D/support/product/ --><A=20
+            onclick=3D"return false"=20
+            href=3D"http://www.mathworks.com/support/product/">Product =
+Support</A>=20
+          </TD></TR>
+        <TR id=3Dlmenu3>
+          <TD class=3Dinactive onmouseover=3D"this.className=3D'hover';" =
+
+          =
+onclick=3D"document.location=3D'/access/helpdesk/help/helpdesk.html'"=20
+          onmouseout=3D"this.className=3D'inactive'"><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- =
+action=3D/access/helpdesk/help/helpdesk.html --><A=20
+            onclick=3D"return false"=20
+            =
+href=3D"http://www.mathworks.com/access/helpdesk/help/helpdesk.html">Docu=
+mentation</A>=20
+          </TD></TR>
+        <TR id=3Dlmenu4>
+          <TD class=3Dinactive onmouseover=3D"this.className=3D'hover';" =
+
+          onclick=3D"document.location=3D'/web_downloads/'"=20
+          onmouseout=3D"this.className=3D'inactive'"><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- =
+action=3D/web_downloads/ --><A=20
+            onclick=3D"return false"=20
+            =
+href=3D"http://www.mathworks.com/web_downloads/">Downloads</A> =
+</TD></TR>
+        <TR id=3Dlmenu5>
+          <TD class=3Dinactive onmouseover=3D"this.className=3D'hover';" =
+
+          onclick=3D"document.location=3D'/support/sysreq/'"=20
+          onmouseout=3D"this.className=3D'inactive'"><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- =
+action=3D/support/sysreq/ --><A=20
+            onclick=3D"return false"=20
+            href=3D"http://www.mathworks.com/support/sysreq/">System=20
+            Requirements</A> </TD></TR>
+        <TR id=3Dlmenu6>
+          <TD class=3Dinactive onmouseover=3D"this.className=3D'hover';" =
+
+          onclick=3D"document.location=3D'/support/cs/'"=20
+          onmouseout=3D"this.className=3D'inactive'"><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- action=3D/support/cs/ =
+--><A=20
+            onclick=3D"return false"=20
+            href=3D"http://www.mathworks.com/support/cs/">Customer =
+Service</A>=20
+        </TD></TR>
+        <TR id=3Dlmenu7>
+          <TD class=3Dinactive onmouseover=3D"this.className=3D'hover';" =
+
+          onclick=3D"document.location=3D'/support/books/'"=20
+          onmouseout=3D"this.className=3D'inactive'"><!-- =
+request.docBase=3D/support/solutions/data/ --><!-- =
+action=3D/support/books/ --><A=20
+            onclick=3D"return false"=20
+            href=3D"http://www.mathworks.com/support/books/">MATLAB =
+&amp; Simulink=20
+            Based Books</A> </TD></TR>
+        <TR>
+          <TD id=3Dbcorner align=3Dright><IMG height=3D5 alt=3D""=20
+            =
+src=3D"http://www.mathworks.com/includes/images/local_nav/nav_bottom_corn=
+er.gif"=20
+            width=3D5 border=3D0></TD></TR>
+        <TR>
+          <TD id=3Dlnbmline height=3D3></TD></TR></TBODY></TABLE></TD>
+    <TD id=3Dbodycol vAlign=3Dtop><IMG id=3Dtopstrip height=3D27 =
+alt=3D""=20
+      =
+src=3D"http://www.mathworks.com/includes_content/images/topstrips/strip4.=
+gif"=20
+      width=3D618 border=3D0>=20
+      <TABLE id=3Drightcol cellSpacing=3D0 cellPadding=3D0 width=3D160 =
+align=3Dright=20
+      border=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3Dcallme>
+            <TABLE id=3Dtrybuy cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+              border=3D0><TBODY>
+              <TR>
+                <TD width=3D19><A=20
+                  =
+href=3D"http://www.mathworks.com/support/contact_us/index.html"><IMG=20
+                  height=3D14 alt=3D""=20
+                  =
+src=3D"http://www.mathworks.com/includes/images/tryitbuyit/call.gif"=20
+                  width=3D15></A> </TD>
+                <TD><A=20
+                  =
+href=3D"http://www.mathworks.com/support/contact_us/index.html">Contact=20
+                  support</A></TD></TR>
+              <TR>
+                <TD width=3D19><A=20
+                  =
+href=3D"javascript:openWindow('/cgi-bin/page_mail.cgi?language=3Den&amp;h=
+ost=3Dwww.mathworks.com&amp;document=3Dwww.mathworks.com/support/solution=
+s/data/1-18GTU.html?');"><IMG=20
+                  height=3D14 alt=3D""=20
+                  =
+src=3D"http://www.mathworks.com/includes/images/tryitbuyit/email.gif"=20
+                  width=3D15></A> </TD>
+                <TD><A=20
+                  =
+href=3D"javascript:openWindow('/cgi-bin/page_mail.cgi?language=3Den&amp;h=
+ost=3Dwww.mathworks.com&amp;document=3Dwww.mathworks.com/support/solution=
+s/data/1-18GTU.html?');">E-mail=20
+                  this page</A></TD></TR>
+              <TR>
+                <TD width=3D19><A href=3D"javascript:printWindow()"><IMG =
+height=3D14=20
+                  alt=3D""=20
+                  =
+src=3D"http://www.mathworks.com/includes/images/tryitbuyit/print.gif"=20
+                  width=3D15></A> </TD>
+                <TD><A href=3D"javascript:printWindow()">Print this=20
+              =
+page</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <DIV id=3Dmainbody><A name=3Dcontent></A>
+      <H1>Technical Solutions</H1>
+      <H2>Solution Number: 1-18GTU</H2><BR>Date Last Modified: 16 Aug =
+2005=20
+      <TABLE class=3Ddatatable2 cellSpacing=3D0 cellPadding=3D0 =
+border=3D0>
+        <TBODY>
+        <TR>
+          <TD><STRONG>Product:</STRONG></TD>
+          <TD width=3D20>&nbsp;</TD>
+          <TD>MATLAB=AE</TD></TR>
+        <TR>
+          <TD><STRONG>Reported in Release:</STRONG></TD>
+          <TD width=3D20>&nbsp;</TD>
+          <TD>R12</TD></TR>
+        <TR>
+          <TD><STRONG>Fixed in Release:</STRONG></TD>
+          <TD width=3D20>&nbsp;</TD>
+          <TD></TD></TR>
+        <TR>
+          <TD><STRONG>Platform:</STRONG></TD>
+          <TD width=3D20>&nbsp;</TD>
+          <TD>All Platforms</TD></TR>
+        <TR>
+          <TD><STRONG>Operating System:</STRONG></TD>
+          <TD width=3D20>&nbsp;</TD>
+          <TD>All OS</TD></TR></TBODY></TABLE>&nbsp;
+      <P></P><!--subject_begin-->
+      <H3>Subject:</H3>
+      <P>Why do I get an error in MATLAB 6.0 (R12) where I got a warning =
+in R11=20
+      with reference to uninitialized variables? =
+</P><!--subject_end--><!--problem description begin-->
+      <H3>Problem Description:</H3>
+      <P><!--prob_desc_begin-->Why do I get an error in MATLAB 6.0 (R12) =
+where I=20
+      got a warning in R11 with reference to uninitialized=20
+      variables?<BR><BR><CODE>a =3D [a,3];<BR></CODE><BR>In MATLAB 5.3 =
+(R11) I=20
+      received the following warning:<BR><BR><SAMP =
+class=3Derror>Warning:=20
+      Reference to uninitialized variable a.<BR></SAMP><BR>In MATLAB 6.0 =
+(R12) I=20
+      get:<BR><BR><SAMP class=3Derror>??? Undefined function or variable =
+
+      'a'.<BR></SAMP></P><!--problem description end-->
+      <P><!--solution_begin-->
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD width=3D550>
+            <DIV style=3D"LEFT: 0px; WORD-WRAP: break-word">
+            <H3>Solution:</H3>
+            <P>There are actually three cases to be considered with =
+reference to=20
+            uninitialized variables in MATLAB.<BR><BR>The first case is =
+the one=20
+            listed above where is a variable is used on the right hand =
+side=20
+            before being initialized.<BR><BR><CODE>function before1<BR>a =
+=3D=20
+            [a,3];<BR></CODE><BR><PRE><BR>MATLAB 5.3 (R11)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before1<BR>Warning: Reference=20
+            to uninitialized variable a in before1 at line 2.<BR>&gt; In =
+
+            d:\temp\before1.m at line 2<BR></SAMP><BR><PRE><BR>MATLAB =
+6.x (R12.x)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before1<BR>??? Undefined=20
+            function or variable 'a'.<BR><BR>Error in =3D=3D&gt;=20
+            d:\temp\before1.m<BR>On line 2 =3D=3D&gt; a =3D =
+[a,3];<BR></SAMP><BR><PRE><BR>MATLAB 6.5 (R13)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before1<BR>??? Undefined=20
+            function or variable 'a'.<BR><BR>Error in =3D=3D&gt;=20
+            d:\temp\before1.m<BR>On line 2 =3D=3D&gt; a =3D =
+[a,3];<BR></SAMP><BR>The=20
+            second case is where a variable is used on the right hand =
+side after=20
+            it first appeared on the left hand side of an assignment =
+which was=20
+            not executed. For example:<BR><BR><CODE>function =
+before2<BR>if=20
+            0<BR>a =3D 1;<BR>end<BR>a =3D =
+[a,3];<BR></CODE><BR><PRE><BR>MATLAB 5.3 (R11)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before2<BR>Warning: Reference=20
+            to uninitialized variable a in before2 at line 5.<BR>&gt; In =
+
+            d:\temp\before2.m at line 5<BR></SAMP><BR><PRE><BR>MATLAB =
+6.x (R12.x)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before2<BR>Warning: Reference=20
+            to uninitialized variable a in before2 at line 5.<BR>&gt; In =
+
+            d:\temp\before2.m at line 5<BR></SAMP><BR><PRE><BR>MATLAB =
+6.5 (R13)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before2<BR>??? Undefined=20
+            function or variable 'a'.<BR><BR>Error in =3D=3D&gt;=20
+            d:\temp\before2.m<BR>On line 5 =3D=3D&gt; a =3D =
+[a,3];<BR></SAMP><BR>The=20
+            third case is called undefined. It occurs when a variable =
+first=20
+            appears on the right-hand side of an assignment which was =
+not yet=20
+            executed. For example,<BR><BR><CODE>function before3<BR>if =
+0<BR>z =3D=20
+            a;<BR>end<BR>a =3D [a,3];<BR></CODE><BR><PRE><BR>MATLAB 5.3 =
+(R11)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before3<BR>??? Undefined=20
+            function or variable 'a'.<BR><BR>Error in =3D=3D&gt;=20
+            d:\temp\before3.m<BR>On line 5 =3D=3D&gt; a =3D =
+[a,3];<BR></SAMP><BR><PRE><BR>MATLAB 6.x (R12.x)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before3<BR>??? Undefined=20
+            function or variable 'a'.<BR><BR>Error in =3D=3D&gt;=20
+            d:\temp\before3.m<BR>On line 5 =3D=3D&gt; a =3D =
+[a,3];<BR></SAMP><BR><PRE><BR>MATLAB 6.5 (R13)<BR>
+</PRE><BR><SAMP class=3Derror>&gt;&gt; before3<BR>??? Undefined=20
+            function or variable 'a'.<BR><BR>Error in =3D=3D&gt;=20
+            d:\temp\before3.m<BR>On line 5 =3D=3D&gt; a =3D =
+[a,3];<BR></SAMP><BR>The=20
+            finalized behavior for this issue is that using an =
+uninitialized=20
+            variable is always an error.<BR><BR>There are various ways =
+to deal=20
+            with this new behavior. One alternative is to set the =
+variable in=20
+            question to empty at the beginning of the M-file. Since=20
+            uninitialized variables were implicitly treated as empty =
+matrices,=20
+            this will preserve the semantics of the program. However, a =
+better=20
+            second-order fix would be to determine why the variable is =
+being=20
+            used before being assigned and correct the =
+discrepancy.<BR><BR>An=20
+            example: <BR><BR><CODE>function out =3D before(in) <BR>% x =
+and out are=20
+            undefined if in &gt;=3D 0 <BR>if (in &lt; 0)<BR>x =3D -in; =
+<BR>out =3D x;=20
+            <BR>end <BR>y =3D ones(x); <BR></CODE><BR>Another fix would=20
+            be:<BR><BR><CODE>function out =3D before(in)<BR>if (in &lt; =
+0)<BR>x =3D=20
+            -in;<BR>out =3D x;<BR>else<BR>x =3D in;<BR>if nargout &gt;=20
+            0<BR>error('Too many outputs requested for positive value of =
+
+            IN');<BR>end<BR>end<BR>y =3D ones(x);<BR></CODE>
+            <P></P></DIV></TD></TR></TBODY></TABLE><!--solution_end-->
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"98%" border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dright><IMG height=3D16=20
+            src=3D"http://www.mathworks.com/images/arrow_red.gif" =
+width=3D16=20
+            align=3DabsMiddle>&nbsp; <A=20
+            =
+onclick=3D"openWindow('https://www.customersat3.com/s/OqiPOeOV.asp?its=3D=
+True&amp;IID=3D&amp;si=3DYODSPnTu%2BPA%3D&amp;SF=3D1-18GTU&amp;SA=3DMATLA=
+B',550, 650,'status=3Dno,resizable=3Dyes,scrollbars=3Dyes');return =
+false"=20
+            =
+href=3D"https://www.customersat3.com/s/OqiPOeOV.asp?its=3DTrue&amp;IID=3D=
+&amp;si=3DYODSPnTu%2BPA%3D&amp;SF=3D1-18GTU&amp;SA=3DMATLAB"><STRONG>Prov=
+ide=20
+            feedback to help us improve this solution!</STRONG></A>=20
+        </TD></TR></TBODY></TABLE></P></DIV></TD></TR></TBODY></TABLE>
+<TABLE id=3Dglobalfooter cellSpacing=3D0 cellPadding=3D3 width=3D778 =
+summary=3Dlayout=20
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle>&nbsp;=A9 1994-2005 The MathWorks, Inc.=20
+      &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<A=20
+      href=3D"http://www.mathworks.com/help.html">Site=20
+      Help</A>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<A=20
+      =
+href=3D"http://www.mathworks.com/company/aboutus/policies_statements/pate=
+nts.html">Patents</A>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<A=20
+      =
+href=3D"http://www.mathworks.com/company/aboutus/policies_statements/trad=
+emarks.html">Trademarks</A>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<A=20
+      =
+href=3D"http://www.mathworks.com/company/aboutus/policies_statements/">Pr=
+ivacy=20
+      Policy</A> </TD></TR></TBODY></TABLE><!-- SiteCatalyst code =
+version: G.7.
+Copyright 1997-2004 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<SCRIPT language=3DJavaScript type=3Dtext/javascript><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+var s_pageName=3Ddocument.title
+var s_server=3D""
+var s_channel=3D""
+var s_pageType=3D""
+var s_prop1=3D""
+var s_prop2=3D""
+var s_prop3=3D""
+var s_prop4=3D""
+var s_prop5=3D""
+/* E-commerce Variables */
+var s_campaign=3D""
+var s_state=3D""
+var s_zip=3D""
+var s_events=3D""
+var s_products=3D""
+var s_purchaseID=3D""
+var s_eVar1=3D""
+var s_eVar2=3D""
+var s_eVar3=3D""
+var s_eVar4=3D""
+var s_eVar5=3D""
+//--></SCRIPT>
+
+<SCRIPT language=3DJavaScript=20
+src=3D"http://www.mathworks.com/includes_content/jscript/omniture/s_code_=
+remote.js"=20
+type=3Dtext/javascript></SCRIPT>
+<!-- End SiteCatalyst code version: G.7. -->
+<SCRIPT language=3DJavaScript1.3=20
+src=3D"http://www.mathworks.com/includes/jscript/footer.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavaScript1.3 type=3Dtext/javascript>=0A=
+    </SCRIPT>
+</BODY></HTML>
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/images/pixelclear.gif
+
+R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/global_nav/printable_header.gif
+
+R0lGODlhYwFIAOYAAAAzZv///xWSroojESVSec3X4E8NCualIaO2xlp8mZSqvdtiJEGivgc7Zj1l
+iNyKe/bc2DMzM8w6IUhujvePKoykuLbF0kmqwhh5jx1KZnWSqt3k6nQbDIOds/imZe/y9dJrWdlD
+Ik6Upeu/t0MaHOXq7/ifKb5JH9bf5jlJTTBbgI+muq2+zf/Wb77M16AzGfV/KDt/k2aGofjOJTGu
+05+hoidWZZ7a7UmctM5TPlO93brI1fqyKWgXDMTQ2/b4+RBCbJ+zxNdbI1R4lu91J+7JwwqLqRxv
+fvjr6W2LpeavpQCZzPPPx8fo8+Hn7TlCSf/aoCFPdrA+HP3GIrpFHv748DlihTtZYUKeshtKczam
+xvm2gnuWrv3SIIAgD2KDnnHJ5E90kzmz2ehrJ43N39d6aStXfEWVqv/MmUUkJQqEnv3gwPTzIspU
+Ify8JOZSI/q7YGqouf7LPFoPCvH09pmuwAk8aPftIf7hjJQqFWGtvcDh6tGvqefs8OCUhkNqiywA
+AAAAYwFIAAAH/4ABgoOEhYaHiImKi4yNjo+QkZKTlJWWl5iZmpucnZ6foKGio6SlpqeoqaqrrK2u
+r7CxsrO0tba3uLm6u7y9vr/AwcLDxMXGx8jJysvMzc7P0NHS09TV1tfY2drb3IdOMQM5SN3k5cRa
+aScLIObt7rpkRxwHPBIj7/j5r30CEQM8Xd7k+KGvoMFSejDMeTHjDhF7ByNK3GTByJMeUmawoRCC
+3cSPICE5EYCBhJcTGk2EkACBEx2Cwz7QkhnS2Q8sRmzMGdBmChsebyT4UdSnUQkLXMIQQAHsBwIN
+fwjQbPUhSBIrDmDWXKbHiBoSHPIImXKHxxgJOaok+iOjA5e3Hf8quH3L5cuEClYAAGBqCcXbChU2
+LKKzYoVbC5I+aDADAMjUAHTkAq7AhUWhPk4K+Y3r1ofIJFkAmNm6rI8INWp0enmxwE1ZIiuLJCIA
+QIUMDRpCE3ibxEHtACUaNOBbqQSCBHqHLFKgV0WdApQKNH78g8UEvVlWQCekwUGhEkHyAllB/BGC
+36SPoagTQ80RDGl6rB4DkAeMlQ8Q/QCigdAQAF8QwkUWATghXHmWMDZcIj/QBsB2jhRFiHSOHcJY
+GIeoAIBghdQBgGeTsCBaesbogVpqNthgAAcDSDGGCVPYF1Rah2yQhYSChAFAAoT0QQAdBi6YyXUA
+yJAIAkAAIWT/Iwj8UQiFjw1SQWM4CoJCAwBUYEgCo1EiYpckBvODDksYccQVT5gRwRxe5OGiCW7w
+QEFQEshmyAYrFKIjj4QoAOSBmvxxnR0cGqLCgHs54gMAVjw53SFXAoBAIVMyakgWWno5YpjBmHiE
+DSlE8ISK8uVxwos8yDkGfo7sWaNwHH4QZY9VZoiAhv0ZwgIBGwDx4CGyFhIEAN5N+GgAwQ6Sl3KE
+OKDhr4MUsGQAfdRKCEw0fXmIVsiWwC2nrdSQQgpPRBBBGjasyeILJxBBQaoUrIqWWoy4eqdwRznQ
+ABATQChIk2YAEYa/hZjhg4dAWGtFBXTY8WEhLIQBRBYyyLSB/1KNWWFFGHQEQCEdt+47BIcdHBsA
+ClkUEFquglQAZhB/WEEAARqUIMgGLGiggg99SNyfticnEIYDDuRawhcOEJAFy+CqUgIZV6QhdRok
+RECqFwO80Ia7JphAARF03lPvjjXaYUcYKnzxha9AZCYIaCyA1xjBgvwQhQ90+NpBIT4AQUcfDkOI
+gqAWKOCrkQUkBUAUHXSggCAUoi1DAlj+6DGWlrXsnQwAEKDVH/3REUYDCPzQBxcAZOHZCoxJ+qwd
+AQBNRxIAhIE3sgSE8UEfXwBgbdOjNAGGFgyccQUJyJNgQxpzcNCmFFtT0PXXdJbRiL2FbOAwFzCh
+oLcgK0AbgP8GADhpyAcpB0B7Fh0PMkESBfrqAuR2ZAGTh1HAdJ750er1uCAuwNKkAqChAAnCCnly
+gV52IAj0QQc5QeBO6oqCvs7VAQVfqEPsNkWHKDCtZBBSAWKAR4o+3EAHNKAB8XAgguMZIAIpMIB8
+siYFIXDNazB4w0okMI5FYI8QG8AXIZCjHMBNIAA/SCJz7DCrPgABOpHKk5WAIBgn+GqEBYhCpjyW
+Opp4qFj9AwK3fMMFQaCOfQXKgtsYY8BdBUCB9uuRr/rTIAAwbYNdCgOfBoGcvQmiBDYjYSiEJwYx
+pFCFOGBhC9FFgua16QVUsCEFpEcBGMhLAkoY2x6BCKhBlAz/Q8PKggpUYIU/mCEKHLsTFQXxH88J
+IgF8siIAGFg3QoTSi8RyVIX4CIAycnGWAVAAGEuWBZnIwEi9O2IhrjMauwFgfoQQkQoCUAFlEqJk
+AEiC2wT5CRPqoJCGTKEWtJBIEYjgCzGIgAyxlgd2LcBdlLQknTyiiB8OIojT+mQAOJeEHfigACj4
+wLcG4T0OKRAAEbTidio4wkGAbAh5KaYgvqjLxyDHlwFgDPz+IMWTCTCjDNQQsyToN2fSchAiysJ1
+DEiID/imMUn4HTcv0QRwhlOcDCinCGJAKufRsA3vnKRQwbbDltSTbPfKZ+0CoKOOLqJvOMrLNKEy
+iAoOEFlc/zDDEHywKIkGgKLG2uUrezkI8plhA1EoVAB8MwQUuPJChihZSaMAzGgurgJY8uO1uOAr
+0QRyppv4ABgOecgVKvIIjfRpO6nQhjHAc6g6lIBQfIjU7HVSEPpEDoYaYYGEDeI8AFBAFKCJrNAM
+sA+MGWBXcQlGyJksABcdxKIakABrTjR1CTCgVA1BPgIgka4nFYQ0AzAshB6iD+TLJmA9cYObjjOn
+5oTPOtvkphMIYQwwEOokLbnDHCziPyzlZAPUqs/w2YFuh0AAEwdRx1xW1bSYtZRrvQrWMFqUrHVz
+UATlqJcRom5aAfiPkUwKsU39d4RO0Os+3btcTjQBhc9N5P8Z1KDOHij2BdBbAHa1W8kxRLZOivgD
+AEZKCCeYjbwjLpDDzECcDWzxmg14TKUyJwg6hEaD41vcICzQmPt1TjONad9YFUw7O/yVl7uUJdNs
+LCTakFa46Anw3IBjBxBtcLMN7gQZiJfTM1hEhheWwgmASoTsatcDHrik9RDRq8Ud2bV1FUTviuUh
+ANjhCysAzX4JQQffXJVaDXDlIA46BILsQC9fcEEH8gKADqzgBwflQgHIEwAeT0vEmzy0bXecYpR+
+VBCcw7Es9xxfr9JBQ6oLABAIEEjONTTLnNiDHnAQhwukYA4WZieGGXvdMgsVDfRCgh8ky0NDWCAM
+URBOA1D/2VANEMBsHvTYBIBgNgdYBgEOWtyrMasC4QDhD3vmwp4LEIYsKNsK/ekAlrLpBN+YoQ5J
+/M/iuHC0KJjNDHtzwR/MZoc/bOcHWcBxIQAucADmhS2mzFwHzCAclVrGBRIzmwr8iIJkA4ELFUiS
+DJBNalhz4gOB5AMHwsxrx/qaAmswxAhWkslCfAAFGwBkCTaAAhxtIOYzFwwdUOCEnm+AJpBGgAUG
+WiCcOwEFb3YozGV+c8ghgC992LYFECChpeccWTgvAQqEvHVEdN0QBajDCnagFScYvebI4rnPCwXy
+nlOLBQpgwaw8/gk+DGAA7RRzG67rWBhkN+WHYEIOvEv3/8L/AgS73ruGiVDmvysCAjkQm+EnnwsI
+MHbxjPe739HACAj4geiUDz0sPHDySmp+C48AvehXv4o1dO31QvWALOoQmEw0HROAyUUBNGAkTXwA
+vZYIbikAo1ZG3B4XcEhVqrrmAXpdogJ/8Hcl9FL8SRwaCJg4dBRwUWf+XeIDvgL+JET8YlLoZe6I
+uL4uoDCF9scJDs63BPj1UnBIbEAvlSjAH5Rz6PI/og5/oCUe4n20QFcsUH2UAH4EeAl/kFanQCGQ
+0H+7IAftNwV4EH+WUClF0lI7MBUF4C+Fcmj8kyxAxCEF8BgisoCCsANqVQAImGNaMiUV8AHC94LR
+ola/d/8+HVhV6IcsEPIB+Acss/KBQCR+kEMw1YeAwnczwUWDinB8QCR8HZiCd7ID/sKCNXIIWHhP
+wWWDmoAHU9ACgGd7vvIf0wRqzREAO0BXACB3nKMXMZhiLMCGKiAYekF+BfAsIuZvelE+5HdotQGH
+AbABIhaI3qeB0BeIiyMTGZcchXB9z5IplRIFwLVgvzGHzVF8+qcXQKAlfdiG0USHdqiITqIYzYF/
+U6Icp1g+yPKGWdKKfRiHlDhLjREAIvYsFdKIQFCJVSVvhWiLilghWXSKd5RcwNSIAPAB5EdNfcV/
+q6glhKgX/YGMJMYLnPMHgCgT5KNFGtBmt7ED/zGDdLX/AeRTAdKRVlNSMXqhRZgIOtJYAL6iRRqy
+AyJiR3tIQOWTXL13W7XBAhqiApWyA6n4Af9RcJUiA/LmYo2hM+e3jRWgAeeokPvoMYcjb8P4bRAS
+kekIhCP2hjmmRfEIgxw5BB4Zjh8wjiY5jvpYAVT4jwEpIvzxLGr1HyD5Gy65QN74hi92jvS4Qfyh
+HPM4kAVZj1DBihoSgIAxYgQJAPWXC/eXJfXYgecnCOSTK08ZfcAlYizAOVEQfeVzfTLhIWe4jCLG
+QOeXjl9VPiKyfQtWfkFIfQGwQHSlAn+gIS9WlYIgl6CYjVO5YF15j4PAOb1ngDJYCFzpldioY0/J
+kYIx/4DAyALaN4jUd4cNyJSUmZWvSE12FJcbEgDApSEa9JRANJVT4iRwCVzkwyzzaFeLo0EaQmPn
+N5d1mSVoOYDDJQiyaZe+UIifWAGAOAjLqIZ3NRlttokyMBm012mlKQirSX0QGI6amZTms5qDEJkQ
+yJmcORm+SQgiFprnt0AblJgAAJxFgpzc+YocuYn1J2LHCRjJ6YziSZWvGH6pKJyJqUXIOZzEF36s
+lCXXiX/gSYXVGYTl+J/juYzzV3wV8CycSUsQCIeTAY6vKIPLmZe0CRhLeAuAOBl0NTLJAZGc04nm
+2BgsAH0awJFSJgPg6G/lyI9FuSGi2ZLARH519qL+4v+YVKh+vsKS+/cYdNWJdNUfc6kBh/OUQwCR
+Arai/hKiFdChnhln/amiQ8CiEzpiRqqTKNqiqUghJQo6XGqiKMqcs5SjtTikZTiaHUl/ZIp95NOJ
+DEoI7aljc1kBdUCFO8oCPbqaNCqNRnKnPdoL7CkltaiBgxiJmnmHG2CduKgl3TkI8sagIqiZRgKX
+86iMdxiEghqHRkKFLNBXUSB8qzgEMrEDbENXcYh/eciJ5WepelExnBklqdoYjMqUMJhjteErOxCZ
+jaqlffgHgqGBvhqZFiqR4flVbKObhFApzyKQG0iFH6CHrBgtngodpLpAaNmp62iWnbmavhg7npqh
+wkCygx54hS+YqIpwgtaXqx/gIdXoCET4iDrmgi1FN+LKhYmQg41grolQALl6c7XoCFtYnV7IZrkK
+HXRFN1B4rj34rgJ7CAybCPp6hLCmIV0JnprgmLvQpn+wo6pQj5Wpgqx3Cx8gA0kyBOBKCVNyR7jQ
+pOXTlKbgj7UxgyE7szRbszZ7szibszq7szzbsz77s0AbtEI7tERbtEZ7tEibtEq7tEzbtE77tFAb
+tVI7tVRbtcAQCAA7
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/global_nav/pic_countryarrow_off.gif
+
+R0lGODlhBAAJAMQAAA4pY9HY5k5sq4+cuf///w4zgWiAsfT2+qGsxFFlko+iy+Dk7BApa3ODpg42
+ixYxbI+ewQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUU
+AAAALAAAAAAEAAkAAAUVoAGMgTASRwMQxJKwKIyw0KqMwwiEADs=
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/global_nav/pic_cart_off.gif
+
+R0lGODlhDwANANUAAAAZTszMzElikY6YqBctWv///wEeW2p3jQAhaO7v7660vC9FcFtqg+Xm56Kq
+tgAjc3GAmyo+ZWJyjQYiXNnc3SpFgAcfUU9hgvf397G5xJegrAAoemJ3nAwnX2p5kh40XjFLgwEa
+T3F9knmGm7e9xpehrwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUUAAAALAAAAAAPAA0AAAZYQIUE
+QCwaiyAFpsBsOpnEjKAAoFqrWMDhyaUCCImrOFvtOosUhiUiIjUKFBIkUnQUMBQH43MsDgILfUcd
+ZgUNHEUjTSNFEkwJRR5NHpGPRhclF0cXGhUAQQA7
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/global_nav/horo_line_full.gif
+
+R0lGODlhAAIBAIAAAP///wAAACH5BAEAAAAALAAAAAAAAgEAAAIUhI+py+0Po5y02ouz3rz7D4bi
+SBUAOw==
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/global_nav/nav_inactive.gif
+
+R0lGODlhAQADAJEAABk5fRkycqez2wAAACH5BAAAAAAALAAAAAABAAMAAAICjFAAOw==
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/global_nav/nav_active.gif
+
+R0lGODlhAQADAIAAAPCUKPjKlCH5BAAAAAAALAAAAAABAAMAAAICRFAAOw==
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/local_nav/nav_bottom_corner.gif
+
+R0lGODlhBQAFAIAAAPn38wAkbyH5BAAAAAAALAAAAAAFAAUAAAIHhI8YF9tdAAA7
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes_content/images/topstrips/strip4.gif
+
+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
+YBmWLamOYlmWZnmWaJmW/RgIADs=
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/tryitbuyit/call.gif
+
+R0lGODlhDwAOAKIAAAAAAPn5+bKyso2OjlhZWtfX18XFxf///yH5BAEAAAcALAAAAAAPAA4AAANA
+eLXcfMPISecgkoDNATbEBwhkKQDZQI7B0AYnSRw0MNz4AND8Qb4uwaCnqFAKvZzylgw5n0OertOJ
+Eq/YrHabAAA7
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/tryitbuyit/email.gif
+
+R0lGODlhDwAOALMIAGNjY9nZ2fX19ejo6MfHxq6vr9jY2NnY2P///wAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAgALAAAAAAPAA4AAAQ3EMlJq70S6M27DmAoBlvxjSRgqsUaau1KzPNG14Bx6EYf
+9IedZkAsGosagXLJXHqeG4x0Sr1EAAA7
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/includes/images/tryitbuyit/print.gif
+
+R0lGODlhDwALAKIAAGRkZO7u7tnZ2aioqOLj4uPj4+Pi4v///yH5BAEAAAcALAAAAAAPAAsAAAMt
+eArcrfCAQGsAcV13s7QVlk0OGTUg9TCCULJu08506xCFYeREXxSvoGMgLA0SADs=
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mathworks.com/images/arrow_red.gif
+
+R0lGODlhEAAQALMAAP///808Fc+KfcZcRNujmPTWz8pEIsZPM8pCHwAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAAAAAAALAAAAAAQABAAAARREMhJay1iGDNEsQBxBGR5EBWBlFKJoFIxsi15fIBQ0kAp
+SIMdjzSQGAKgScBgRCZ7TEBQ6OwFijmqkvQDyHbbwG2iorlg5NnuBMJoOJ6nHBABADs=
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes/css/ie6_up.css
+
+BODY {
+	FONT-SIZE: 71%; MARGIN: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, =
+sans-serif; BACKGROUND-COLOR: #f0f0f0
+}
+H1 {
+	MARGIN-TOP: 0px; FONT-SIZE: 1.4em
+}
+H2 {
+	MARGIN-TOP: 0px; FONT-SIZE: 1.15em; MARGIN-BOTTOM: 0px
+}
+H3 {
+	MARGIN-TOP: 0px; FONT-SIZE: 1em; MARGIN-BOTTOM: 0px
+}
+TH {
+	MARGIN-TOP: 0px; FONT-SIZE: 1em; MARGIN-BOTTOM: 0px
+}
+H4 {
+	MARGIN-TOP: 0px; FONT-SIZE: 0.95em; MARGIN-BOTTOM: 0px
+}
+#globaltop {
+	FONT-SIZE: 0.9em
+}
+#globaltop2 {
+	FONT-SIZE: 0.9em
+}
+#rightcol {
+	LINE-HEIGHT: 1.2em
+}
+#globalfooter {
+	FONT-SIZE: 0.9em
+}
+DIV.onecol {
+	HEIGHT: 1%
+}
+DIV.twocol {
+	HEIGHT: 1%
+}
+DIV.threecol {
+	HEIGHT: 1%
+}
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes/css/mod_brows.css
+
+UNKNOWN {
+	MARGIN: 5px; BORDER-BOTTOM: gray 1px dashed
+}
+#rightcol {
+	POSITION: relative; TOP: -20px
+}
+INPUT.monospace {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; =
+BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; =
+FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.tabs {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: =
+url(/images/tab_bottom.gif) repeat-x 50% bottom; FLOAT: left; =
+PADDING-BOTTOM: 0px; WIDTH: 96%; PADDING-TOP: 0px
+}
+.tabs UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; PADDING-TOP: 12px; LIST-STYLE-TYPE: none
+}
+.tabs LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 9px; BACKGROUND: =
+url(/images/left_both.gif) no-repeat left top; FLOAT: left; =
+PADDING-BOTTOM: 0px; MARGIN-RIGHT: 2px; PADDING-TOP: 0px; BORDER-BOTTOM: =
+#254987 1px solid
+}
+.tabs A {
+	PADDING-RIGHT: 15px; DISPLAY: block; PADDING-LEFT: 6px; FONT-WEIGHT: =
+bold; BACKGROUND: url(/images/right_both.gif) no-repeat right top; =
+FLOAT: left; PADDING-BOTTOM: 4px; WIDTH: 0.1em; PADDING-TOP: 5px; =
+WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+UNKNOWN {
+	WIDTH: auto
+}
+.tabs A {
+	FLOAT: none
+}
+.tabs A:hover {
+	TEXT-DECORATION: none
+}
+.tabs .active {
+	BORDER-TOP-WIDTH: 0px; BACKGROUND-POSITION: 0px -150px; =
+BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: =
+0px
+}
+.tabs .active A {
+	BACKGROUND-POSITION: 100% -150px; PADDING-BOTTOM: 5px
+}
+.tabs LI:hover {
+	BACKGROUND-POSITION: 0% -150px
+}
+.tabs LI:hover A {
+	BACKGROUND-POSITION: 0% -150px
+}
+.tabs LI:hover A {
+	BACKGROUND-POSITION: 100% -150px
+}
+.tabtble {
+	CLEAR: both; BORDER-RIGHT: #254987 1px solid; BORDER-TOP: #254987 0px =
+solid; BORDER-LEFT: #254987 1px solid; BORDER-BOTTOM: #254987 1px solid
+}
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes/css/site4.css
+
+@import url( /includes/css/mod_brows.css );
+H1 {
+	COLOR: #c86a02; LINE-HEIGHT: 125%
+}
+H2 {
+	COLOR: #800000
+}
+H4 {
+	COLOR: #800000
+}
+A {
+	COLOR: #002bc7; TEXT-DECORATION: underline
+}
+IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: =
+none; BORDER-BOTTOM-STYLE: none
+}
+HR {
+	DISPLAY: inline; WIDTH: 100%; COLOR: #cbb49c; BORDER-TOP-STYLE: none; =
+BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 1px; =
+BACKGROUND-COLOR: #cbb49c; BORDER-BOTTOM-STYLE: none
+}
+.linklist A {
+	DISPLAY: block; MARGIN-BOTTOM: 5px
+}
+UL.linklist {
+	LIST-STYLE-IMAGE: url(/images/pixelclear.gif); MARGIN-BOTTOM: 4px
+}
+UL.linklist LI {
+	MARGIN-TOP: 4px
+}
+.prodlist P {
+	MARGIN-BOTTOM: 6px
+}
+P {
+	MARGIN-TOP: 0px
+}
+UL {
+	MARGIN-TOP: 0px
+}
+OL {
+	MARGIN-TOP: 0px
+}
+OL {
+	MARGIN-LEFT: 24px
+}
+UL {
+	LIST-STYLE-IMAGE: url(/images/bullet_purp.gif); MARGIN-LEFT: 16px; =
+LIST-STYLE-TYPE: square
+}
+UL UL {
+	MARGIN-LEFT: 22px; LIST-STYLE-TYPE: square
+}
+.brule {
+	MARGIN-BOTTOM: 8px; BORDER-BOTTOM: #000000 1px solid
+}
+UNKNOWN {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+UL.bul {
+	LIST-STYLE-IMAGE: url(/images/bullet_purp.gif); LIST-STYLE-TYPE: square
+}
+UL.bulnbm {
+	LIST-STYLE-IMAGE: url(/images/bullet_purp.gif); MARGIN-BOTTOM: 0px; =
+LIST-STYLE-TYPE: square
+}
+DIV.pdf UL.lists {
+	LIST-STYLE-IMAGE: url(/images/pdf_li.gif); LIST-STYLE-TYPE: none
+}
+UL.lists {
+	MARGIN-BOTTOM: 20px; MARGIN-LEFT: 20px
+}
+UL.lists LI {
+	MARGIN-BOTTOM: 10px
+}
+H3.ulheader {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: -20px
+}
+UL.lists LI.ulheader {
+	MARGIN-TOP: 20px; FONT-WEIGHT: bold; FONT-SIZE: 97%; LIST-STYLE-IMAGE: =
+none; MARGIN-LEFT: -20px; LIST-STYLE-TYPE: none
+}
+UNKNOWN {
+	FONT-SIZE: 97%; LIST-STYLE-IMAGE: none
+}
+UNKNOWN {
+	MARGIN-BOTTOM: 2px; MARGIN-LEFT: 10px
+}
+UNKNOWN {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: =
+20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+UL.nlbul {
+	LIST-STYLE-IMAGE: url(/company/newsletter/win02/images/bullet_2.gif); =
+LIST-STYLE-TYPE: square
+}
+UL.orngbul {
+	LIST-STYLE-IMAGE: url(/images/common/pagenav/arrow_orange.gif)
+}
+UL.orngsqbul {
+	LIST-STYLE-IMAGE: url(/images/bullet_purp.gif)
+}
+.gray {
+	COLOR: gray
+}
+EM.caption {
+	COLOR: #575757
+}
+BLOCKQUOTE {
+	MARGIN: 0px; COLOR: #800000
+}
+CODE {
+	BORDER-RIGHT: #d3d3d3 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#d3d3d3 1px solid; DISPLAY: block; PADDING-LEFT: 10px; FONT-SIZE: 110%; =
+MARGIN-BOTTOM: 10px; BORDER-LEFT: #d3d3d3 1px solid; COLOR: #000000; =
+BORDER-BOTTOM: #d3d3d3 1px solid; BACKGROUND-COLOR: #f9f7f3
+}
+PRE.code {
+	BORDER-RIGHT: #d3d3d3 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#d3d3d3 1px solid; DISPLAY: block; PADDING-LEFT: 10px; FONT-SIZE: 110%; =
+MARGIN-BOTTOM: 10px; BORDER-LEFT: #d3d3d3 1px solid; COLOR: #000000; =
+BORDER-BOTTOM: #d3d3d3 1px solid; BACKGROUND-COLOR: #f9f7f3
+}
+CODE.fnctn {
+	BORDER-TOP-WIDTH: 0px; DISPLAY: inline; PADDING-LEFT: 0px; =
+BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 110%; BORDER-BOTTOM-WIDTH: 0px; =
+BACKGROUND-COLOR: transparent; BORDER-RIGHT-WIDTH: 0px
+}
+KBD {
+	BORDER-TOP-WIDTH: 0px; DISPLAY: inline; PADDING-LEFT: 0px; =
+BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 110%; BORDER-BOTTOM-WIDTH: 0px; =
+BACKGROUND-COLOR: transparent; BORDER-RIGHT-WIDTH: 0px
+}
+PRE.code SPAN.keyword {
+	COLOR: #0000ff
+}
+CODE SPAN.keyword {
+	COLOR: #0000ff
+}
+PRE.code SPAN.comment {
+	COLOR: #228b22
+}
+CODE SPAN.comment {
+	COLOR: #228b22
+}
+PRE.code SPAN.string {
+	COLOR: #a020f0
+}
+CODE SPAN.string {
+	COLOR: #a020f0
+}
+PRE.code SPAN.untermstring {
+	COLOR: #b20000
+}
+CODE SPAN.untermstring {
+	COLOR: #b20000
+}
+PRE.code SPAN.syscmd {
+	COLOR: #b28c00
+}
+CODE SPAN.syscmd {
+	COLOR: #b28c00
+}
+SAMP.error {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; COLOR: #ff0000
+}
+PRE.error {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; COLOR: #ff0000
+}
+PRE.ans {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; COLOR: #2f4f4f; FONT-STYLE: =
+italic
+}
+SAMP.anseq {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; COLOR: #2f4f4f; FONT-STYLE: =
+italic
+}
+SAMP.ans {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 45px; COLOR: =
+darkslategray; FONT-STYLE: italic
+}
+#content_skiplink {
+	LEFT: 0px; POSITION: absolute; TOP: 0px
+}
+#search_skiplink {
+	Z-INDEX: 1; LEFT: 0px; POSITION: absolute; TOP: 28px
+}
+#globaltop {
+	LETTER-SPACING: 0.05em; BACKGROUND-COLOR: #00246f
+}
+#ptools {
+	FONT-WEIGHT: bold
+}
+#ptools A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#ptools {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#access {
+	COLOR: #ffcc00; TEXT-DECORATION: none
+}
+#access A {
+	COLOR: #ffcc00; TEXT-DECORATION: none
+}
+#access A:hover {
+	COLOR: #ffffff
+}
+#globaltop2 {
+	FONT-WEIGHT: bold; BACKGROUND-IMAGE: =
+url(/includes/images/global_nav/header_bg.jpg); WIDTH: 778px; COLOR: =
+white; BACKGROUND-REPEAT: no-repeat; HEIGHT: 72px; BACKGROUND-COLOR: =
+#001b57
+}
+#globaltop2 A:hover {
+	COLOR: darkorange
+}
+#pixelfade {
+	CLEAR: right; FLOAT: right; HEIGHT: 1px
+}
+#logopixel {
+	FLOAT: left
+}
+#print_logo {
+	DISPLAY: none; FLOAT: left
+}
+#search_field {
+	BORDER-RIGHT: #a3a2a2 1px solid; BORDER-TOP: #a3a2a2 1px solid; =
+FONT-SIZE: 1em; BORDER-LEFT: #a3a2a2 1px solid; BORDER-BOTTOM: #a3a2a2 =
+1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+#search_label {
+	LEFT: 0px; OVERFLOW: hidden; WIDTH: 1px; POSITION: absolute; TOP: =
+-100px; HEIGHT: 1px
+}
+#searchbutton {
+	BORDER-RIGHT: #a3a2a2 1px solid; BORDER-TOP: #a3a2a2 1px solid; =
+FONT-WEIGHT: bold; FONT-SIZE: 10px; BORDER-LEFT: #a3a2a2 1px solid; =
+COLOR: white; BORDER-BOTTOM: #a3a2a2 1px solid; FONT-FAMILY: Verdana; =
+BACKGROUND-COLOR: #636363
+}
+#ptools2 {
+	FLOAT: right; MARGIN: 0.5em; WHITE-SPACE: nowrap; HEIGHT: 3ex
+}
+#ptools2 A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+
+@media Screen   =20
+{
+#site_search {
+	DISPLAY: inline
+}
+#access2 {
+	CLEAR: right
+}
+    }
+#access2 {
+	MARGIN-TOP: 1.3em; FLOAT: right; MARGIN-RIGHT: 0.5em; WHITE-SPACE: =
+nowrap
+}
+#access2 {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#access2 A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#topnav {
+	BORDER-LEFT: #00246f 1px solid; CURSOR: pointer; BACKGROUND-COLOR: =
+#f4f5f9
+}
+#topnavitems TD {
+	BORDER-RIGHT: #00246f 1px solid; PADDING-BOTTOM: 3px; COLOR: #003366; =
+PADDING-TOP: 3px
+}
+#topnavitems TD DIV {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em
+}
+#topnav A {
+	FONT-WEIGHT: bold; COLOR: #0d2b98; TEXT-DECORATION: none
+}
+#topnav TD.activebg {
+	BACKGROUND-COLOR: #c3d1ec
+}
+#topnav TD.active {
+	BACKGROUND-IMAGE: url(/images/nav_active.gif); BACKGROUND-REPEAT: =
+repeat-x
+}
+#topnav TD.inactive {
+	BACKGROUND-IMAGE: url(/images/nav_inactive.gif); BACKGROUND-REPEAT: =
+repeat-x
+}
+.menu_lay {
+	BORDER-RIGHT: #254987 1px solid; BORDER-TOP: #254987 1px solid; =
+DISPLAY: none; BORDER-LEFT: #254987 1px solid; BORDER-BOTTOM: #254987 =
+1px solid; POSITION: absolute; BACKGROUND-COLOR: #f2f4f8
+}
+.info_lay {
+	MARGIN: 5px
+}
+.menu_lay A {
+	FONT-WEIGHT: normal; TEXT-INDENT: 5px; TEXT-DECORATION: none
+}
+.menu_lay A:hover {
+	TEXT-DECORATION: none
+}
+.menuitem {
+	PADDING-RIGHT: 2px; BORDER-TOP: #f2f4f8 1px solid; PADDING-LEFT: 2px; =
+PADDING-BOTTOM: 2px; WIDTH: auto; PADDING-TOP: 2px; BORDER-BOTTOM: =
+#f2f4f8 1px solid; POSITION: relative
+}
+.menuitem_hover {
+	PADDING-RIGHT: 2px; BORDER-TOP: gray 1px solid; PADDING-LEFT: 2px; =
+PADDING-BOTTOM: 2px; CURSOR: pointer; PADDING-TOP: 2px; BORDER-BOTTOM: =
+gray 1px solid; BACKGROUND-COLOR: #e3e7f7
+}
+#mainframe {
+	BORDER-RIGHT: lightgrey 1px solid; BORDER-BOTTOM: #d26e00 2px solid; =
+BACKGROUND-COLOR: #ffffff
+}
+#leftnavcol {
+	BACKGROUND-IMAGE: url(/includes/images/local_nav/local_nav_bg.gif); =
+PADDING-BOTTOM: 10px; VERTICAL-ALIGN: top; BACKGROUND-REPEAT: repeat-x
+}
+.action A {
+	COLOR: #d26e00
+}
+#bodycol {
+	VERTICAL-ALIGN: top
+}
+#bodycol A:visited {
+	COLOR: #405c9c
+}
+#bodycol A:hover {
+	COLOR: #d26e00; TEXT-DECORATION: underline
+}
+TABLE#latestnews TD {
+	PADDING-RIGHT: 10px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 10px; =
+PADDING-BOTTOM: 10px; PADDING-TOP: 10px; BACKGROUND-COLOR: #f5f8fa
+}
+TABLE#latestnews UL {
+	MARGIN-BOTTOM: 0px
+}
+#mainbody {
+	MARGIN-BOTTOM: 20px; MARGIN-LEFT: 20px; LINE-HEIGHT: 1.4em; =
+MARGIN-RIGHT: 30px
+}
+DIV.fwidth#mainbody {
+	MARGIN-TOP: 20px
+}
+#leftnav {
+	BORDER-RIGHT: #254987 1px solid; CURSOR: pointer; BACKGROUND-COLOR: =
+#f3f4f8
+}
+#leftnav A {
+	TEXT-DECORATION: none
+}
+#leftnav .inactive {
+	PADDING-RIGHT: 3px; BORDER-TOP: #f2f4f8 1px solid; PADDING-LEFT: 10px; =
+FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: =
+#f2f4f8 1px solid
+}
+#leftnav .active {
+	PADDING-RIGHT: 3px; BORDER-TOP: #254987 1px solid; PADDING-LEFT: 10px; =
+FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: =
+#254987 1px solid; BACKGROUND-COLOR: #c3d1ec
+}
+#leftnav .hover {
+	PADDING-RIGHT: 3px; BORDER-TOP: #3c568f 1px solid; PADDING-LEFT: 10px; =
+FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: =
+#3c568f 1px solid; BACKGROUND-COLOR: #dbe4f5
+}
+#leftnav #lnbmline {
+	BACKGROUND-COLOR: #254987
+}
+
+@media Screen   =20
+{
+.hid {
+	DISPLAY: none
+}
+    }
+.sactive {
+	PADDING-RIGHT: 0px; BORDER-TOP: #254987 1px solid; PADDING-LEFT: 20px; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #254987 1px solid; =
+BACKGROUND-COLOR: #cad4f9
+}
+.shover {
+	PADDING-RIGHT: 0px; BORDER-TOP: #808080 1px solid; PADDING-LEFT: 20px; =
+PADDING-BOTTOM: 3px; CURSOR: pointer; PADDING-TOP: 3px; BORDER-BOTTOM: =
+#808080 1px solid; BACKGROUND-COLOR: #e3e7f7
+}
+.sinactive {
+	PADDING-RIGHT: 0px; BORDER-TOP: #f2f4f8 1px solid; PADDING-LEFT: 20px; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: #f2f4f8 1px solid
+}
+#rightcol {
+	MARGIN-BOTTOM: 20px; MARGIN-LEFT: 10px; LINE-HEIGHT: 1.4em
+}
+#rightcol UL {
+	MARGIN-BOTTOM: 0px
+}
+#rightcol LI {
+	MARGIN-BOTTOM: 4px
+}
+#rightcol H2 {
+	FONT-SIZE: 100%
+}
+#rightcol A H2 {
+	TEXT-DECORATION: none
+}
+.callme {
+	BORDER-TOP: #7384a5 1px solid; BORDER-LEFT: #7384a5 1px solid; =
+BORDER-BOTTOM: #7384a5 1px solid; BACKGROUND-COLOR: #ebebeb
+}
+#trybuy {
+	MARGIN: 5px 8px; BACKGROUND-COLOR: #ebebeb
+}
+#trybuy A:link {
+	COLOR: #002bc7; TEXT-DECORATION: none
+}
+#trybuy A:visited {
+	COLOR: #002bc7; TEXT-DECORATION: none
+}
+#trybuy A:hover {
+	COLOR: darkorange
+}
+#rightcol .cart {
+	PADDING-LEFT: 10px; BORDER-LEFT: #7384a5 1px solid; PADDING-TOP: 8px; =
+BACKGROUND-COLOR: #e6edf7
+}
+#rightcol .us {
+	FONT-STYLE: italic
+}
+#wedgetp {
+	PADDING-LEFT: 10px; BORDER-LEFT: #7384a5 1px solid; BORDER-BOTTOM: =
+#7384a5 1px solid; BACKGROUND-COLOR: #e6edf7
+}
+.spotlight {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 8px; PADDING-BOTTOM: 14px; =
+PADDING-TOP: 10px; BORDER-BOTTOM: #dcdcdc 1px solid; BACKGROUND-COLOR: =
+#f4f4f4
+}
+.spotlight DIV.action {
+	MARGIN-TOP: 10px
+}
+DIV.attr {
+	COLOR: #800000; TEXT-ALIGN: right
+}
+DIV.divider {
+	MARGIN: 5px
+}
+.callout {
+	BORDER-RIGHT: gray 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: gray 1px =
+solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: gray 1px =
+solid; PADDING-TOP: 10px; BORDER-BOTTOM: gray 1px solid; =
+BACKGROUND-COLOR: #f7f7f7
+}
+.pleft {
+	PADDING-LEFT: 10px
+}
+.pright {
+	PADDING-RIGHT: 10px
+}
+UL.cboxlist {
+	LIST-STYLE-IMAGE: none; LIST-STYLE-TYPE: none
+}
+UL.cboxlist LI {
+	TEXT-INDENT: -20px
+}
+UL.cboxlist INPUT {
+	MARGIN-BOTTOM: 1px
+}
+DIV.twocol {
+=09
+}
+DIV.twocol DIV.col {
+	WIDTH: 49%
+}
+DIV.threecol {
+=09
+}
+DIV.threecol DIV.col {
+	WIDTH: 32%
+}
+DIV.onecol:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: =
+"."
+}
+DIV.twocol:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: =
+"."
+}
+DIV.threecol:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: =
+"."
+}
+DIV.col {
+	FLOAT: left
+}
+DIV.spacer {
+	FLOAT: left; WIDTH: 2%; HEIGHT: 10px
+}
+UL.pagenav LI {
+	LIST-STYLE-IMAGE: url(/images/common/pagenav/page_nav_inactive.gif)
+}
+UL.pagenav LI.active {
+	FONT-WEIGHT: bold; LIST-STYLE-IMAGE: =
+url(/images/common/pagenav/arrow_orange.gif)
+}
+.datatable1 {
+	BORDER-RIGHT: #d3d3d3 1px solid; BORDER-TOP: #d3d3d3 1px solid; =
+BORDER-LEFT: #d3d3d3 1px solid; BORDER-BOTTOM: #d3d3d3 1px solid
+}
+.datatable1 TD {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 6px
+}
+.datatable1 TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 4px; COLOR: #ffffff; PADDING-TOP: 4px; BACKGROUND-COLOR: =
+#004a9d; TEXT-ALIGN: left
+}
+.datatable1 .level2 TD {
+	BACKGROUND-COLOR: #5a7cc3
+}
+#bodycol .datatable1 TD.level2 A:link {
+	FONT-WEIGHT: bold; COLOR: white
+}
+#bodycol .datatable1 TD.level2 A:visited {
+	FONT-WEIGHT: bold; COLOR: white
+}
+.datatable2 {
+	BORDER-RIGHT: #d3d3d3 1px solid; BORDER-TOP: #d3d3d3 1px solid; =
+BORDER-LEFT: #d3d3d3 1px solid; BORDER-BOTTOM: #d3d3d3 1px solid
+}
+.datatable2 TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 2px
+}
+.datatable2 TH {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 2px; COLOR: #ffffff; PADDING-TOP: 2px; BACKGROUND-COLOR: =
+#004a9d; TEXT-ALIGN: center
+}
+.datatable3 {
+	BORDER-RIGHT: #d3d3d3 1px solid; BORDER-TOP: #d3d3d3 1px solid; =
+BORDER-LEFT: #d3d3d3 1px solid; BORDER-BOTTOM: #d3d3d3 1px solid
+}
+.datatable4 {
+	BORDER-RIGHT: #d3d3d3 1px solid; BORDER-TOP: #d3d3d3 1px solid; =
+BORDER-LEFT: #d3d3d3 1px solid; BORDER-BOTTOM: #d3d3d3 1px solid
+}
+.datatable3 TD {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 8px; BACKGROUND-COLOR: #ffffff
+}
+.datatable4 TD {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 8px; BACKGROUND-COLOR: #ffffff
+}
+.datatable3 TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 4px; COLOR: #000000; PADDING-TOP: 4px; BACKGROUND-COLOR: =
+#e4e9ef; TEXT-ALIGN: left
+}
+.datatable4 TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 4px; COLOR: #000000; PADDING-TOP: 4px; BACKGROUND-COLOR: =
+#e4e9ef; TEXT-ALIGN: left
+}
+#bodycol .datatable3 .level2 A:link {
+	FONT-WEIGHT: bold; COLOR: #0d2b98
+}
+#bodycol .datatable4 .level2 A:link {
+	FONT-WEIGHT: bold; COLOR: #0d2b98
+}
+#bodycol .datatable3 .level2 A:visited {
+	FONT-WEIGHT: bold; COLOR: #405c9c
+}
+#bodycol .datatable4 .level2 A:visited {
+	FONT-WEIGHT: bold; COLOR: #405c9c
+}
+TABLE.datatable3 TR.level2 TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 4px; COLOR: #000000; PADDING-TOP: 4px; BACKGROUND-COLOR: =
+#ffffff; TEXT-ALIGN: left
+}
+TABLE.datatable4 TR.level2 TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 4px; COLOR: #000000; PADDING-TOP: 4px; BACKGROUND-COLOR: =
+#ffffff; TEXT-ALIGN: left
+}
+TABLE.datatable3 TR TD {
+	PADDING-LEFT: 8px
+}
+TABLE.datatable4 TR TD {
+	PADDING-LEFT: 8px
+}
+TABLE.datatable3 TD {
+	BORDER-TOP: #d3d3d3 1px solid
+}
+#bodycol .datatable1 TH A:visited {
+	COLOR: #ffffff
+}
+#bodycol .datatable1 TH A:link {
+	COLOR: #ffffff
+}
+#bodycol .datatable1 TH A:hover {
+	COLOR: #ffffff
+}
+.datatable5 TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: =
+11px; PADDING-BOTTOM: 2px; MARGIN: 10px 0px 0px; COLOR: #000000; =
+PADDING-TOP: 2px; BORDER-BOTTOM: #d3d3d3 1px solid; BACKGROUND-COLOR: =
+#e4e9ef; TEXT-ALIGN: left
+}
+.datatable5 {
+	BORDER-RIGHT: #d3d3d3 1px solid; BORDER-TOP: #d3d3d3 1px solid; =
+BORDER-LEFT: #d3d3d3 1px solid; BORDER-BOTTOM: #d3d3d3 1px solid
+}
+.datatable5 TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+.datatable5 UL {
+	MARGIN-BOTTOM: 0px
+}
+.datatable5 .nested TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+.datatable5 .feature {
+	BACKGROUND-COLOR: #f6f6f6
+}
+.inputbody {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 15px; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 10px; BACKGROUND-COLOR: #eeeeee
+}
+TABLE.inputtable1 {
+	BORDER-RIGHT: #546e8f 1px solid; BORDER-TOP: #546e8f 1px solid; =
+BORDER-LEFT: #546e8f 1px solid; BORDER-BOTTOM: #546e8f 1px solid
+}
+.inputtable1 TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; =
+PADDING-TOP: 2px; BACKGROUND-COLOR: #e4e9ef; TEXT-ALIGN: left
+}
+.level2 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 2px; COLOR: white; PADDING-TOP: 2px; BACKGROUND-COLOR: =
+#6377a9; TEXT-ALIGN: left
+}
+.level2 A:link {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.level2 TD A:visited {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.level2 A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.inputtable1 INPUT {
+	MARGIN-BOTTOM: 5px
+}
+.inputtable1 SELECT {
+	MARGIN-BOTTOM: 5px
+}
+.inputtable1 INPUT.toggle {
+	MARGIN-BOTTOM: 0px
+}
+.inputtable1 TEXTAREA {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; MARGIN-BOTTOM: 10px; BORDER-RIGHT-WIDTH: 0px
+}
+.inputtable1 .cboxtbl {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; MARGIN-BOTTOM: 10px; BORDER-RIGHT-WIDTH: 0px
+}
+.inputtable1 FIELDSET {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; MARGIN-BOTTOM: 10px; BORDER-RIGHT-WIDTH: 0px
+}
+FIELDSET {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+.demotable TD {
+	PADDING-BOTTOM: 20px
+}
+.intabletop1 TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 3px; COLOR: #ffffff; PADDING-TOP: 0px; BACKGROUND-COLOR: =
+#004a9d; TEXT-ALIGN: left
+}
+.intabletop1 TH.corner {
+	VERTICAL-ALIGN: top; TEXT-ALIGN: right
+}
+TD.intabletop2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 2px; COLOR: #ffffff; PADDING-TOP: 0px; WHITE-SPACE: =
+nowrap; BACKGROUND-COLOR: #004a9d
+}
+.oddrow {
+	BACKGROUND-COLOR: #eeeeee
+}
+TH.decimal {
+	TEXT-ALIGN: center
+}
+TH.integer {
+	TEXT-ALIGN: center
+}
+.integer {
+	TEXT-ALIGN: center
+}
+.decimal {
+	TEXT-ALIGN: right
+}
+.date {
+	WHITE-SPACE: nowrap
+}
+LABEL {
+	DISPLAY: block; FONT-WEIGHT: bold; COLOR: #525252
+}
+LABEL.toggle {
+	DISPLAY: inline; FONT-WEIGHT: normal; COLOR: #000000
+}
+LABEL.question {
+	FONT-SIZE: 11px; COLOR: #800000
+}
+CAPTION {
+	PADDING-RIGHT: 5px; FONT-SIZE: smaller; FONT-STYLE: italic; TEXT-ALIGN: =
+right
+}
+.req {
+	COLOR: #ff0000
+}
+.inputbody {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 15px; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 10px; BACKGROUND-COLOR: #f9f7f3
+}
+.shadedcell1 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 1px; COLOR: #ffffff; PADDING-TOP: 1px; BACKGROUND-COLOR: =
+#edf7fc
+}
+.shadedcell2 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; =
+PADDING-BOTTOM: 1px; COLOR: #ffffff; PADDING-TOP: 1px; BACKGROUND-COLOR: =
+#004a9d; TEXT-ALIGN: center
+}
+.alertbox {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; =
+BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; =
+BACKGROUND-COLOR: #e6ebf8
+}
+.alertbox TD {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 7px; =
+PADDING-TOP: 7px
+}
+H1 SUP.prod {
+	FONT-SIZE: 70%
+}
+SUP.prod {
+	FONT-SIZE: 80%
+}
+A SUP.prod {
+	TEXT-DECORATION: none
+}
+A:link SUP.prod {
+	TEXT-DECORATION: none
+}
+A:visited SUP.prod {
+	TEXT-DECORATION: none
+}
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes/css/print.css
+
+BODY {
+	BACKGROUND-COLOR: white
+}
+A:link {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; =
+COLOR: #003366; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; =
+COLOR: #003366; TEXT-DECORATION: underline
+}
+#leftnavcol {
+	DISPLAY: none
+}
+#banner {
+	DISPLAY: none
+}
+#rightcol {
+	DISPLAY: none
+}
+#globaltop2 {
+	WIDTH: 669px; align: left
+}
+#bodycol {
+	WIDTH: 669px; align: left
+}
+#topnav {
+	WIDTH: 669px; align: left
+}
+#globaltop2 {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: white
+}
+#site_search {
+	DISPLAY: none
+}
+#search_button {
+	DISPLAY: none
+}
+#ptools2 {
+	DISPLAY: none
+}
+#access2 {
+	DISPLAY: none
+}
+#pixelfade {
+	DISPLAY: none
+}
+#topstrip {
+	DISPLAY: none
+}
+#language_pref {
+	DISPLAY: none
+}
+#mainbody {
+	MARGIN-BOTTOM: 20px; MARGIN-LEFT: 0px
+}
+#print_logo {
+	DISPLAY: block
+}
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes_content/jscript/popup_menus/popup_menus.js
+
+/*Killer OO JS Menu Script by Pete Smith Version 1.1*/=0A=
+=0A=
+var menu_script_loaded =3D true;=0A=
+=0A=
+function Menu(label){=0A=
+	this.items =3D new Array();=0A=
+	this.actions =3D new Array();=0A=
+=0A=
+//Now, make the container of menus=0A=
+//Automatically add it to the array of menus=0A=
+    this.label =3D label;=0A=
+=0A=
+//methods for this object=0A=
+	this.html =3D Html;=0A=
+	this.showMenu =3D showMenu;=0A=
+	this.hideMenu =3D hideMenu;=0A=
+}=0A=
+=0A=
+=0A=
+Menu.prototype.addMenuItem =3D function addMenuItem(label, action) {=0A=
+    this.items[this.items.length] =3D label;=0A=
+    this.actions[this.actions.length] =3D action;=0A=
+=0A=
+}=0A=
+=0A=
+function Html(){=0A=
+	var output =3D new String();=0A=
+	output +=3D '<div id=3D"'+this.label+'" class=3D"menu_lay" =
+onmouseover=3D"thisMenu.showMenu()" onmouseout=3D"thisMenu.hideMenu()">';=0A=
+	//output +=3D this.label;=0A=
+	for (var a in this.actions){=0A=
+            if (this.actions[a]){=0A=
+		        output +=3D '\n<div class=3D"menuitem" =
+onmouseover=3D"onMenuItemOver(this)" onmouseout=3D"onMenuItemOut(this)" =
+onclick=3D"location.href=3D\''+this.actions[a]+'\'">';=0A=
+        		output +=3D '&nbsp;<a href=3D"'+ this.actions[a]+ '">';=0A=
+        		output +=3D this.items[a]+ '</a>&nbsp;'=0A=
+        		output +=3D '</div>\n';=0A=
+    	    } else {=0A=
+          	output +=3D '\n<div =
+class=3D"info_lay">'+this.items[a]+'</div>';=0A=
+    	    }=0A=
+	}=0A=
+	output +=3D '</div>\n\n';=0A=
+return output;=0A=
+}=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+function fireMenu( menu_id, thisLink, orient ) {=0A=
+	thisMenu =3D window.menus[menu_id];=0A=
+	thisLink.onmouseout =3D function(){  =
+thisLink.style.backgroundColor=3D''; thisMenu.hideMenu();}=0A=
+	hideAllMenus();=0A=
+=0A=
+	thisMenu.showMenu();=0A=
+		positionMenu(thisLink,orient);=0A=
+=0A=
+		=0A=
+=0A=
+	//=0A=
+=0A=
+	//DD detection Section=0A=
+	//Now we get the rendered position coords, and attach to the object.=0A=
+	thisMenu.coords =3D =
+getMyCoords(document.getElementById(thisMenu.label));=0A=
+	//Now we loop over all, attaching coords only if IE=0A=
+ if (document.all) {=0A=
+      for (var i in document.all){=0A=
+      if (document.all[i].type =3D=3D "select-one" || =
+document.all[i].type =3D=3D "select-multiple") {=0A=
+         document.all[i].coords =3D getMyCoords(document.all[i]);=0A=
+             if ( doICollide (thisMenu , document.all[i]) ) {=0A=
+                 hideObject(document.all[i]);=0A=
+             }=0A=
+         }=0A=
+      }=0A=
+    }=0A=
+}=0A=
+=0A=
+function showHiddenDD(){=0A=
+   if (document.all){=0A=
+      for (var i in document.all){=0A=
+         if (document.all[i].type =3D=3D "select-one" || =
+document.all[i].type =3D=3D "select-multiple" && =
+document.all[i].style.visibility =3D=3D "hidden") {=0A=
+            showObject(document.all[i]);=0A=
+         }=0A=
+      }=0A=
+   }=0A=
+}=0A=
+=0A=
+function hideObject(hideObject){=0A=
+    hideObject.style.visibility =3D "hidden";=0A=
+}=0A=
+=0A=
+function showObject(showObject){=0A=
+    showObject.style.visibility =3D "visible";=0A=
+}=0A=
+=0A=
+=0A=
+function getMyCoords(getObject){=0A=
+   coords =3D new Object();=0A=
+   coords.width =3D getObject.offsetWidth;=0A=
+   coords.height =3D getObject.offsetHeight;=0A=
+   coords.oLeft =3D getPageOffsetLeft(getObject);=0A=
+   coords.oTop =3D getPageOffsetTop(getObject);=0A=
+   return coords;=0A=
+}=0A=
+=0A=
+function doICollide(object1 , object2) {=0A=
+    //First we find out if the A coord is within the object2.=0A=
+    if (object1.coords.oLeft < object2.coords.oLeft + =
+object2.coords.width && object2.coords.oLeft < object1.coords.oLeft + =
+object1.coords.width ) {=0A=
+        if (object1.coords.oTop < object2.coords.oTop + =
+object2.coords.height && object2.coords.oTop < object1.coords.oTop + =
+object1.coords.height ) {=0A=
+            return true;=0A=
+        }=0A=
+    }=0A=
+}=0A=
+=0A=
+function positionMenu(thisObject,orient){=0A=
+//Get x and y position of the link=0A=
+	coords =3D getMyCoords(thisObject);=0A=
+//Now calculate the Height and Width=0A=
+	linkHeight =3D thisObject.offsetHeight;=0A=
+	linkWidth =3D thisObject.offsetWidth;=0A=
+	switch(orient) {=0A=
+		case "r":=0A=
+			oLeft =3D coords.oLeft + linkWidth;=0A=
+			oTop =3D coords.oTop;=0A=
+		break;=0A=
+		default:=0A=
+			oLeft =3D coords.oLeft;=0A=
+			oTop =3D coords.oTop + linkHeight;=0A=
+		break;=0A=
+	}=0A=
+	//Now we position the menu=0A=
+	document.getElementById(thisMenu.label).style.left =3D oLeft + "px";=0A=
+	document.getElementById(thisMenu.label).style.top =3D oTop + "px";=0A=
+    //We only want to position to left edge of block level elements, and =
+only handles the shorties.=0A=
+    if ( thisObject.tagName !=3D "A" && =
+document.getElementById(thisMenu.label).offsetWidth < =
+thisObject.offsetWidth ) {=0A=
+	    document.getElementById(thisMenu.label).style.width =3D =
+thisObject.offsetWidth + 15;=0A=
+    }=0A=
+=0A=
+}=0A=
+=0A=
+function hideAllMenus(){=0A=
+	for (var a in window.menus) {=0A=
+		document.getElementById(window.menus[a].label).style.display =3D =
+"none";=0A=
+	}=0A=
+	showHiddenDD();=0A=
+}=0A=
+=0A=
+function showMenu(){=0A=
+	if (window.hideMenuTimer) window.clearTimeout(hideMenuTimer);=0A=
+	document.getElementById(thisMenu.label).style.display =3D "block";=0A=
+}=0A=
+=0A=
+function hideMenu(){=0A=
+	hideMenuTimer =3D =
+setTimeout("document.getElementById('"+thisMenu.label+"').style.display =
+=3D 'none'; showHiddenDD();",850);=0A=
+}=0A=
+=0A=
+=0A=
+function onMenuItemOver(thisMenuItem){=0A=
+	thisMenuItem.className =3D "menuitem_hover";=0A=
+}=0A=
+=0A=
+function onMenuItemOut(thisMenuItem){=0A=
+	thisMenuItem.className =3D "menuitem";=0A=
+}=0A=
+=0A=
+function addMenu(menu){=0A=
+	//The array that holds the menu objects is menus=0A=
+	if (!window.menus) window.menus =3D new Array();=0A=
+	window.menus[menu.label] =3D menu;=0A=
+	//window.menus[window.menus.length] =3D menu;=0A=
+}=0A=
+=0A=
+function makeMenus(){=0A=
+	if (!document.getElementById("menuContainer")){=0A=
+		container =3D document.createElement("DIV");=0A=
+		container.id =3D "menuContainer"=0A=
+	}=0A=
+document.body.appendChild(container) ;=0A=
+//Now, put our nice html in da laya playa.=0A=
+  container.innerHTML =3D complete_html;=0A=
+=0A=
+}=0A=
+=0A=
+function printMenus(){=0A=
+var h =3D new String();=0A=
+	for (var c in window.menus) {=0A=
+		h +=3D menus[c].html();=0A=
+	}=0A=
+return h;=0A=
+}=0A=
+=0A=
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes_content/jscript/global_nav/global_nav_en.js
+
+	var myMenu =3D new Menu("WorldwideGlobal");=0A=
+	myMenu.addMenuItem("US/Canada", host_pre + ".mathworks.com");=0A=
+	myMenu.addMenuItem("Belgium", host_pre + ".mathworks.nl");=0A=
+	myMenu.addMenuItem("Denmark", host_pre + ".se.mathworks.com");=0A=
+	myMenu.addMenuItem("Finland", host_pre + ".se.mathworks.com");=0A=
+	myMenu.addMenuItem("France", host_pre + ".mathworks.fr");=0A=
+	myMenu.addMenuItem("Germany", host_pre + ".mathworks.de");=0A=
+	myMenu.addMenuItem("Ireland", host_pre + ".mathworks.co.uk");=0A=
+	myMenu.addMenuItem("Italy" , host_pre + ".mathworks.it");=0A=
+	myMenu.addMenuItem("Korea" , host_pre + ".mathworks.co.kr");=0A=
+	myMenu.addMenuItem("Luxembourg", host_pre + ".mathworks.nl");=0A=
+	myMenu.addMenuItem("Netherlands" , host_pre + ".mathworks.nl");=0A=
+	myMenu.addMenuItem("Norway", host_pre + ".se.mathworks.com");=0A=
+	myMenu.addMenuItem("Portugal", host_pre + ".mathworks.es");=0A=
+	myMenu.addMenuItem("Spain", host_pre + ".mathworks.es");=0A=
+	myMenu.addMenuItem("Sweden", host_pre + ".se.mathworks.com");=0A=
+	myMenu.addMenuItem("Switzerland", host_pre + ".mathworks.ch");=0A=
+	myMenu.addMenuItem("United Kingdom", host_pre + ".mathworks.co.uk");=0A=
+	myMenu.addMenuItem("All Other Countries","/company/worldwide/");=0A=
+ addMenu(myMenu);=0A=
+=0A=
+=0A=
+=0A=
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes/jscript/local_nav.js
+
+/* Local Navigation Menu Script */=0A=
+/* By Peter Smith Version 1 */=0A=
+=0A=
+/* ShowMe toggles the currently selected menu, image */=0A=
+function showMe (index) {=0A=
+  // if IE 5.X, IE 6.X , Moz, DOM=0A=
+  if (document.getElementById) {=0A=
+    var menutrs =3D =
+document.getElementById("leftnav").getElementsByTagName("tr");=0A=
+    //First, we toggle the one we selected=0A=
+    for (a=3D0; a < menutrs.length; a++) {=0A=
+      br =3D new RegExp(index + "-");=0A=
+      if ( menutrs[a].id.match(br) ) {=0A=
+        menutrs[a].className =3D ( menutrs[a].className !=3D  "hid") ? =
+"hid" : "";=0A=
+      } // end if=0A=
+    } // end for=0A=
+    //Now, we toggle the image and titles=0A=
+    img =3D document.getElementById("limg-" + index);=0A=
+    img.src =3D ( img.src.match("collapse.gif") ) ? =
+"/includes/images/local_nav/expand.gif" : =
+"/includes/images/local_nav/collapse.gif" ;=0A=
+    img.alt =3D ( img.alt !=3D "Hide Section" ) ? "Hide Section" : "Show =
+Section";=0A=
+    link =3D img.parentNode;=0A=
+    link.title =3D ( link.title !=3D  "Hide Section") ? "Hide Section" : =
+"Show Section";=0A=
+  } // end if=0A=
+} // end function showMe
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes/jscript/common.js
+
+function printWindow () {=0A=
+   bV =3D parseInt(navigator.appVersion)=0A=
+   if (bV >=3D 4) window.print()=0A=
+} // end function printWindow=0A=
+=0A=
+function openWindow ( url, width, height, options, name ) {=0A=
+  if ( ! width ) width =3D 640;=0A=
+  if ( ! height ) height =3D 420;=0A=
+  if ( ! options ) options =3D =
+"scrollbars=3Dyes,menubar=3Dyes,toolbar=3Dyes,location=3Dyes,status=3Dyes=
+,resizable=3Dyes";=0A=
+  if ( ! name ) name =3D "outsideSiteWindow";=0A=
+  var newWin =3D window.open( url, name, "width=3D" + width + =
+",height=3D" + height + "," + options );=0A=
+} // end function openWindow=0A=
+=0A=
+function jumpMenu (targ,selObj,restore) { //v3.0=0A=
+  =
+eval(targ+".location=3D'"+selObj.options[selObj.selectedIndex].value+"'")=
+;=0A=
+  if (restore) selObj.selectedIndex=3D0;=0A=
+} // end function jumpMenu=0A=
+=0A=
+/* Get X-coordinate of an object */=0A=
+function getPageOffsetLeft (el) {=0A=
+  var ol=3Del.offsetLeft;=0A=
+  while ((el=3Del.offsetParent) !=3D null) { ol +=3D el.offsetLeft; }=0A=
+  return ol;=0A=
+} // end function getPageOffsetLeft=0A=
+=0A=
+/* Get Y-coordinate of an object */=0A=
+function getPageOffsetTop (el) {=0A=
+  var ot=3Del.offsetTop;=0A=
+  while((el=3Del.offsetParent) !=3D null) { ot +=3D el.offsetTop; }=0A=
+  return ot;=0A=
+} // end function getPageOffsetTop=0A=
+=0A=
+/*Functions for TopNav Hovering*/=0A=
+function topNavHover(topnav) {=0A=
+	topnav =3D document.getElementById(topnav);=0A=
+	topnav.style.backgroundColor =3D "#DBE4F5" ;=0A=
+}=0A=
+=0A=
+function topNavHoverOff(topnav) {=0A=
+	topnav =3D document.getElementById(topnav);=0A=
+	topnav.style.backgroundColor =3D "" ;=0A=
+}=0A=
+=0A=
+function mouseover(thisEl, thisImg, thisRollOver) {=0A=
+	var prevSrc =3D thisImg.src;=0A=
+	thisImg.src =3D thisRollOver;=0A=
+	thisEl.onmouseout =3D function () {thisImg.src =3D prevSrc;}=0A=
+}=0A=
+=0A=
+function compMatch() {=0A=
+=0A=
+    // not all documents have the response form we detect Salutation=0A=
+    if (document.getElementById("Salutation") =3D=3D null) {=0A=
+        return true;=0A=
+    }=0A=
+=0A=
+    // not all response forms have the Company_or_University field=0A=
+    if (document.getElementById("Company_or_University") =3D=3D null) {=0A=
+        return true;=0A=
+    }=0A=
+=0A=
+    var compValue =3D =
+document.getElementById("Company_or_University").value;=0A=
+=0A=
+    // not all response forms have the nr_Department field=0A=
+    if (document.getElementById("Department") !=3D null) {=0A=
+        if (document.getElementById("Department").value =3D=3D "") {=0A=
+            var subjects =3D ["college" , "univ" ];=0A=
+            for (var i in subjects) {=0A=
+                var pattern =3D new RegExp(subjects[i], "i");=0A=
+                if (pattern.test(compValue)) {=0A=
+                    if (confirm (=0A=
+                        "Please provide your department name. "+=0A=
+                        "You have submitted a company/university address =
+that typically requires "+=0A=
+                        "a department name in order for the post office =
+and your organization's mail room "+=0A=
+                        "to deliver the materials you are requesting. "+=0A=
+                        "Click 'OK' to go back and specify a department =
+or "+=0A=
+                        "click 'cancel' to submit the form without a =
+department.")) {=0A=
+                        document.getElementById("Department").focus();=0A=
+                        return false;=0A=
+                    }=0A=
+                }=0A=
+            }=0A=
+        }=0A=
+    }=0A=
+    // not all response forms have the Mail_stop field=0A=
+    if (document.getElementById("Mail_stop") !=3D null) {=0A=
+        if (document.getElementById("Mail_stop").value =3D=3D "") {=0A=
+            var subjects =3D ["air force", "bae", "boeing", =
+"daimlerchrysler", "delphi", "ford", "general motors", "gm", "honeywell",=0A=
+                "ibm", "jet propulsion", "lockheed", "mit lincoln", =
+"nasa", "navair", "naval air", "naval research", "raytheon", =
+"Richardson", "sun micro", "visteon" ];=0A=
+            for (var i in subjects) {=0A=
+                var pattern =3D new RegExp(subjects[i], "i");=0A=
+                if (pattern.test(compValue)) {=0A=
+                    if (confirm (=0A=
+                        "Please provide your mail stop. "+=0A=
+                        "You have submitted an address for a company =
+that typically requires "+=0A=
+                        "a mail stop in order for the post office and =
+your organization's mail room "+=0A=
+                        "to deliver the materials you are requesting. "+=0A=
+                        "Click 'OK' to go back and specify a mail stop =
+or "+=0A=
+                        "click 'Cancel' to submit the form without a =
+mail stop.")){=0A=
+                        document.getElementById("Mail_stop").focus();=0A=
+                        return false;=0A=
+                    }=0A=
+                }=0A=
+            }=0A=
+        }=0A=
+    }=0A=
+    return true;=0A=
+} // end function compMatch=0A=
+=0A=
+function sizeTables () {=0A=
+  var bodyTables =3D =
+document.getElementById("mainbody").getElementsByTagName("table");=0A=
+  var rightCol =3D document.getElementById("rightcol");=0A=
+  var rightColHeight =3D rightCol.offsetHeight;=0A=
+  var rcolY =3D getPageOffsetTop(rightCol);=0A=
+  var rcolTotal =3D (rcolY + rightColHeight);=0A=
+  for (i=3D0; i<bodyTables.length; i++) {=0A=
+    if (bodyTables[i].offsetWidth > 420 && =
+getPageOffsetTop(bodyTables[i]) < rcolTotal && =
+document.getElementById("leftnavcol")) {=0A=
+      bodyTables[i].width =3D 420 ;=0A=
+    }// end if=0A=
+  } // end for=0A=
+} // end function sizeTables=0A=
+=0A=
+/* OnLoad Firing */=0A=
+onload =3D function () {=0A=
+  if (navigator.appName =3D=3D "Microsoft Internet Explorer") {=0A=
+    if ( document.getElementById("mainbody") && =
+document.getElementById("rightcol") ) {=0A=
+      sizeTables();=0A=
+    } // end if=0A=
+  } // end if=0A=
+} // end anonymous function=0A=
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes_content/jscript/omniture/s_code_remote.js
+
+/************************ ADDITIONAL FEATURES ************************
+     Dynamic Account Selection
+     Plugins
+*/
+/************************** CONFIG SECTION **************************/
+/* You may add or alter any code config here.                       */
+/* Specify the Report Suite ID(s) to track here */
+var s_account=3D"mathmain"
+var s_dynamicAccountSelection=3Dtrue
+var =
+s_dynamicAccountList=3D"mathdev=3Dwww-external-dev.;mathIntranet=3Dwww-in=
+ternal.;mathExtra=3Ddistribs/;mathGlobal,mathUK=3D.co.uk;mathGlobal,mathC=
+H=3D.ch;mathGlobal,mathES=3D.es;mathGlobal,mathNordic=3Dse.;mathGlobal,ma=
+thKR=3D.co.kr;mathGlobal,mathIT=3D.it;mathGlobal,mathDE=3D.de;mathGlobal,=
+mathFR=3D.fr;mathGlobal,mathNL=3D.nl;mathGlobal,mathTools=3Dmathtools.net=
+;mathGlobal,mathmain=3Dmathworks.com"
+var =
+s_dynamicAccountMatch=3Dwindow.location.host+window.location.pathname
+/* E-commerce Config */
+var s_currencyCode=3D"USD"
+var s_eVarCFG=3D""
+/* Link Tracking Config */
+var s_trackDownloadLinks=3Dtrue
+var s_trackExternalLinks=3Dtrue
+var s_trackInlineStats=3Dtrue
+var =
+s_linkDownloadFileTypes=3D"exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls"
+var s_linkInternalFilters=3D"javascript:," + location.hostname
+var s_linkLeaveQueryString=3Dfalse
+var s_linkTrackVars=3D"None"
+var s_linkTrackEvents=3D"None"
+
+var s_cookieDomainPeriods=3D"2"
+var s_cookieDomainList=3D"mathworks.co.kr,mathworks.co.uk";
+var d=3Ds_split(s_cookieDomainList,","),h=3Dlocation.hostname;
+for (var i=3D0; i<d.length; =
+i++){if(h.indexOf(d[i])>=3D0)s_cookieDomainPeriods=3D"3";}
+
+
+
+/* Plugin Config */
+var s_usePlugins=3Dtrue
+function s_doPlugins() {
+	/* Add calls to plugins here */
+}
+
+/************************** PLUGINS SECTION *************************/
+/* You may insert any plugins you wish to use here.                 */
+
+/*
+ * Utility Function: Split a string (compatible with Javascript 1.0)
+ */
+function s_split(s,p)
+	{var i=3D0,a=3Dnew Array(),j;if(s&&p){while((s.length>0)&&(p.length
+	>0)){j=3Ds.indexOf(p);if((!j)&&(p!=3Ds.substring(0,p.length)))break;
+	if(j=3D=3D-1){a[i++] =3D =
+s;break;}a[i++]=3Ds.substring(0,j);s=3Ds.substring
+	(j+p.length,s.length)}}return a}
+/*
+ * Plugin: Get Plugin Modified Value
+ */
+function s_vp_getValue(vs)
+	{var k=3Dvs.substring(0,2)=3D=3D's_'?vs.substring(2):vs;return s_wd[
+	's_vpm_'+k]?s_wd['s_vpv_'+k]:s_gg(k)}
+/*
+ * Plugin: Get Query String CGI Variable Value
+ */
+function s_vp_getCGI(vs,k)
+	{var v=3D'';if(k&&s_wd.location.search){var q=3Ds_wd.location.search,
+	qq=3Dq.indexOf('?');q=3Dqq<0?q:q.substring(qq+1);v=3Ds_pt(q,'&',s_cgif,
+	k)}s_vpr(vs,v)}function s_cgif(t,k){if(t){var te=3Dt.indexOf('=3D'),
+	sk=3Dte<0?t:t.substring(0,te),sv=3Dte<0?'True':t.substring(te+1);if(
+	sk=3D=3Dk)return s_epa(sv)}return ''}
+/*
+ * Plugin: Get Value From Cookie
+ */
+function s_vp_getCookie(vs,k)
+	{s_vpr(vs,s_c_r(k))}
+/*
+ * Plugin Utilities v2.0 (Required For All Plugins)
+ */
+function s_vpr(vs,v){if(s_wd[vs])s_wd[vs]=3Ds_wd[vs];else s_wd[vs]=3D''
+if(vs.substring(0,2) =3D=3D =
+'s_')vs=3Dvs.substring(2);s_wd['s_vpv_'+vs]=3Dv
+s_wd['s_vpm_'+vs]=3D1}function s_dt(tz,t){var d=3Dnew =
+Date;if(t)d.setTime(
+t);d=3Dnew Date(d.getTime()+(d.getTimezoneOffset()*60*1000))
+return new Date(Math.floor(d.getTime()+(tz*60*60*1000)))}
+function s_vh_gt(k,v){var =
+vh=3D'|'+s_c_r('s_vh_'+k),vi=3Dvh.indexOf('|'+v
++'=3D'),ti=3Dvi<0?vi:vi+2+v.length,pi=3Dvh.indexOf('|',ti),t=3Dti<0?'':
+vh.substring(ti,pi<0?vh.length:pi);return t}function s_vh_gl(k){var
+vh=3Ds_c_r('s_vh_'+k),e=3Dvh?vh.indexOf('=3D'):0;return =
+vh?(vh.substring(0,
+e?e:vh.length)):''}function s_vh_s(k,v){if(k&&v){var e=3Dnew Date,st=3D
+e.getTime(),y=3De.getYear(),c=3D's_vh_'+k,vh=3D'|'+s_c_r(c)+'|',t=3Ds_vh_=
+gt(k,
+v);e.setYear((y<1900?y+1900:y)+5);if(t)vh=3Ds_rep(vh,'|'+v+'=3D'+t+'|','|=
+'
+);if(vh.substring(0,1)=3D=3D'|')vh=3Dvh.substring(1);if(vh.substring(
+vh.length-1,vh.length)=3D=3D'|')vh=3Dvh.substring(0,vh.length-1);vh=3Dv
++'=3D[PCC]'+(vh?'|'+vh:'');s_c_w(c,vh,e);if(s_vh_gt(k,v)!=3D'[PCC]')
+return 0;vh=3Ds_rep(vh,'[PCC]',st);s_c_w(c,vh,e)}return 1}
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var =
+s_un,s_ios=3D0,s_q=3D'',s_code=3D'',code=3D'',s_bcr=3D0,s_lnk=3D'',s_eo=3D=
+'',
+s_vb,s_pl,s_tfs=3D0,s_etfs=3D0,s_wd=3Dwindow,s_d=3Ds_wd.document,s_ssl=3D=
+(
+s_wd.location.protocol.toLowerCase().indexOf('https')>=3D0),s_n=3D
+navigator,s_u=3Ds_n.userAgent,s_apn=3Ds_n.appName,s_v=3Ds_n.appVersion,
+s_apv,s_i,s_ie=3Ds_v.indexOf('MSIE '),s_ns6=3Ds_u.indexOf('Netscape6/')
+if(s_v.indexOf('Opera')>=3D0||s_u.indexOf('Opera')>=3D0)s_apn=3D'Opera';v=
+ar
+s_isie=3D(s_apn=3D=3D'Microsoft Internet =
+Explorer'),s_isns=3D(s_apn=3D=3D
+'Netscape'),s_isopera=3D(s_apn=3D=3D'Opera'),s_ismac=3D(s_u.indexOf('Mac'=
+)>=3D0)
+if(s_ie>0){s_apv=3DparseInt(s_i=3Ds_v.substring(s_ie+5));if(s_apv>3)s_apv=
+=3D
+parseFloat(s_i)}else if(s_ns6>0)s_apv=3DparseFloat(s_u.substring(s_ns6
++10));else s_apv=3DparseFloat(s_v);function s_fl(s,l){return (s+''
+).substring(0,l)}function s_co(o){if(!o)return o;var n=3Dnew Object,x
+for(x in o)if(x.indexOf("select")<0&&x.indexOf("filter")<0)n[x]=3Do[x]
+return n}function s_num(x){var s=3Dx.toString(),g=3D'0123456789',p,d
+for(p=3D0;p<s.length;p++){d=3Ds.substring(p,p+1);if(g.indexOf(d)<0)
+return 0}return 1}function s_rep(s,o,n){var =
+i=3Ds.indexOf(o),l=3Dn.length>
+0?n.length:1;while(s&&i>=3D0){s=3Ds.substring(0,i)+n+s.substring(i
++o.length);i=3Ds.indexOf(o,i+l)}return s}function s_ape(s){return s?
+s_rep(escape(''+s),'+','%2B'):s}function s_epa(s){return s?unescape(
+s_rep(''+s,'+',' ')):s}function s_pt(s,d,f,a){var =
+t=3Ds,x=3D0,y,r;while(t)
+{y=3Dt.indexOf(d);y=3Dy<0?t.length:y;t=3Dt.substring(0,y);r=3Df(t,a);if(r=
+)
+return =
+r;x+=3Dy+d.length;t=3Ds.substring(x,s.length);t=3Dx<s.length?t:''}
+return ''}function =
+s_isf(t,a){if(t.substring(0,2)=3D=3D's_')t=3Dt.substring(
+2);return (t!=3D''&&t=3D=3Da)}function =
+s_fsf(t,a){if(s_pt(a,',',s_isf,t))
+s_fsg+=3D(s_fsg!=3D''?',':'')+t;return 0}var s_fsg;function s_fs(s,f){
+s_fsg=3D'';s_pt(s,',',s_fsf,f);return s_fsg}var s_c_d=3D''
+function s_c_gdf(t,a){if(!s_num(t))return 1;return 0}function s_c_gd()
+{var d=3Ds_wd.location.hostname,n=3Ds_gg('cookieDomainPeriods'),p;if(d&&
+!s_c_d){n=3Dn?parseInt(n):2;n=3Dn>2?n:2;p=3Dd.lastIndexOf('.');while(p>=3D=
+0&&
+n>1){p=3Dd.lastIndexOf('.',p-1);n--}s_c_d=3Dp>0&&s_pt(d,'.',s_c_gdf,0)?
+d.substring(p):''}return s_c_d}function s_c_r(k){k=3Ds_ape(k);var c=3D' =
+'
++s_d.cookie,s=3Dc.indexOf(' =
+'+k+'=3D'),e=3Ds<0?s:c.indexOf(';',s),v=3Ds<0?'':
+s_epa(c.substring(s+2+k.length,e<0?c.length:e));return v!=3D'[[B]]'?v:''
+}function s_c_w(k,v,e){var =
+d=3Ds_c_gd(),l=3Ds_gg('cookieLifetime'),s;v=3D''
++v;l=3Dl?(''+l).toUpperCase():'';if(e&&l!=3D'SESSION'&&l!=3D'NONE'){s=3D(=
+v!=3D
+''?parseInt(l?l:0):-60);if(s){e=3Dnew Date;e.setTime(e.getTime()+(s*1000
+))}}if(k&&l!=3D'NONE'){s_d.cookie=3Dk+'=3D'+s_ape(v!=3D''?v:'[[B]]')+'; =
+'
++'path=3D/;'+(e&&l!=3D'SESSION'?' =
+expires=3D'+e.toGMTString()+';':'')+(d?
+' domain=3D'+d+';':'');return s_c_r(k)=3D=3Dv}return 0}function =
+s_cet(f,a,
+et,oe,fb){var r,d=3D0
+/*@cc_on@if(@_jscript_version>=3D5){try{return f(a)}catch(e){return =
+et(e)}d=3D1}@end@*/
+if(!d){if(s_ismac&&s_u.indexOf('MSIE 4')>=3D0)return fb(a);else{
+s_wd.s_oe=3Ds_wd.onerror;s_wd.onerror=3Doe;r=3Df(a);s_wd.onerror=3Ds_wd.s=
+_oe
+return r}}}function s_gtfset(e){return s_tfs}function s_gtfsoe(e){
+s_wd.onerror=3Ds_wd.s_oe;s_etfs=3D1;var =
+code=3Ds_gs(s_un);if(code)s_d.write(
+code);s_etfs=3D0;return true}function s_gtfsfb(a){return s_wd}
+function s_gtfsf(w){var p=3Dw.parent,l=3Dw.location;s_tfs=3Dw;if(p&&
+p.location!=3Dl&&p.location.host=3D=3Dl.host){s_tfs=3Dp;return =
+s_gtfsf(s_tfs)}
+return s_tfs}function =
+s_gtfs(){if(!s_tfs){s_tfs=3Ds_wd;if(!s_etfs)s_tfs=3D
+s_cet(s_gtfsf,s_tfs,s_gtfset,s_gtfsoe,s_gtfsfb)}return s_tfs}
+function s_ca(un){un=3Dun.toLowerCase();var =
+ci=3Dun.indexOf(','),fun=3Dci<0?
+un:un.substring(0,ci),imn=3D's_i_'+fun;if(s_d.images&&s_apv>=3D3&&
+!s_isopera&&(s_ns6<0||s_apv>=3D6.1)){s_ios=3D1;if(!s_d.images[imn]&&(
+!s_isns||(s_apv<4||s_apv>=3D5))){s_d.write('<im'+'g name=3D"'+imn
++'" height=3D1 width=3D1 border=3D0 =
+alt=3D"">');if(!s_d.images[imn])s_ios=3D0}}}
+function s_it(un){s_ca(un)}function s_mr(un,sess,q,ta){un=3D
+un.toLowerCase();var =
+ci=3Dun.indexOf(','),fun=3Dci<0?un:un.substring(0,ci
+),unc=3Ds_rep(fun,'_','-'),imn=3D's_i_'+fun,im,b,e,rs=3D'http'+(s_ssl?'s'=
+:''
+)+'://'+(s_ssl?'102':unc)+'.112.2O7.net/b/ss/'+un+'/1/G.7-PD-R/'
++sess+'?[AQB]&ndh=3D1'+(q?q:'')+(s_q?s_q:'')+'&[AQE]';if(s_ios){im=3Ds_wd=
+[
+imn]?s_wd[imn]:s_d.images[imn];if(!im)im=3Ds_wd[imn]=3Dnew =
+Image;im.src=3Drs
+if(rs.indexOf('&pe=3D')>=3D0&&(!ta||ta=3D=3D'_self'||ta=3D=3D'_top'||(s_w=
+d.name&&
+ta=3D=3Ds_wd.name))){b=3De=3Dnew =
+Date;while(e.getTime()-b.getTime()<500)e=3D
+new Date}return ''}return '<im'+'g sr'+'c=3D"'+rs
++'" width=3D1 height=3D1 border=3D0 alt=3D"">'}function s_gg(v){var =
+g=3D's_'+v
+return s_wd[g]||s_wd.s_disableLegacyVars?s_wd[g]:s_wd[v]}var s_qav=3D''
+function s_havf(t,a){var b=3Dt.substring(0,4),s=3Dt.substring(4),n=3D
+parseInt(s),k=3D's_g_'+t,m=3D's_vpm_'+t,q=3Dt,v=3Ds_gg('linkTrackVars'),e=
+=3D
+s_gg('linkTrackEvents');if(!s_wd['s_'+t])s_wd['s_'+t]=3D'';s_wd[k]=3Ds_wd=
+[
+m]?s_wd['s_vpv_'+t]:s_gg(t);if(s_lnk||s_eo){v=3Dv?v+',pageName,pageURL,'
++'referrer,charSet,cookieDomainPeriods,cookieLifetime,currencyCode,pu'
++'rchaseID':'';if(v&&!s_pt(v,',',s_isf,t))s_wd[k]=3D'';if(t=3D=3D'events'=
+&&e
+)s_wd[k]=3Ds_fs(s_wd[k],e)}s_wd[m]=3D0;if(t=3D=3D'pageURL')q=3D'g';else =
+if(t=3D=3D
+'referrer')q=3D'r';else if(t=3D=3D'charSet')q=3D'ce';else if(t=3D=3D
+'cookieDomainPeriods')q=3D'cdp';else if(t=3D=3D'cookieLifetime')q=3D'cl'
+else if(t=3D=3D'currencyCode')q=3D'cc';else =
+if(t=3D=3D'channel')q=3D'ch';else if(
+t=3D=3D'campaign')q=3D'v0';else =
+if(s_num(s)){if(b=3D=3D'prop')q=3D'c'+n;else if(
+b=3D=3D'eVar')q=3D'v'+n;else =
+if(b=3D=3D'hier')q=3D'h'+n}if(s_wd[k]&&t!=3D
+'linkName'&&t!=3D'linkType')s_qav+=3D'&'+q+'=3D'+s_ape(s_wd[k]);return =
+''}
+function s_hav(){var n,av=3D'charSet,cookieDomainPeriods,cookieLifetime'
++',pageName,pageURL,referrer,channel,server,pageType,campaign,state,z'
++'ip,events,products,currencyCode,purchaseID,linkName,linkType'
+for(n=3D1;n<26;n++)av+=3D',prop'+n+',eVar'+n+',hier'+n;s_qav=3D'';s_pt(av=
+,
+',',s_havf,0);return s_qav}function s_lnf(t,h){t=3Dt?t.toLowerCase():''
+h=3Dh?h.toLowerCase():'';var =
+te=3Dt.indexOf('=3D');if(t&&te>0&&h.indexOf(
+t.substring(te+1))>=3D0)return t.substring(0,te);return ''}
+function s_ln(h){if(s_gg('linkNames'))return s_pt(s_gg('linkNames'),
+',',s_lnf,h);return ''}function =
+s_ltdf(t,h){t=3Dt?t.toLowerCase():'';h=3D
+h?h.toLowerCase():'';var =
+qi=3Dh.indexOf('?');h=3Dqi>=3D0?h.substring(0,qi):h
+if(t&&h.substring(h.length-(t.length+1))=3D=3D'.'+t)return 1;return 0}
+function =
+s_ltef(t,h){t=3Dt?t.toLowerCase():'';h=3Dh?h.toLowerCase():'';if(
+t&&h.indexOf(t)>=3D0)return 1;return 0}function s_lt(h){var lft=3Ds_gg(
+'linkDownloadFileTypes'),lef=3Ds_gg('linkExternalFilters'),lif=3Ds_gg(
+'linkInternalFilters')?s_gg('linkInternalFilters'):
+s_wd.location.hostname;h=3Dh.toLowerCase();if(s_gg('trackDownloadLinks'
+)&&lft&&s_pt(lft,',',s_ltdf,h))return 'd';if(s_gg('trackExternalLinks'
+)&&(lef||lif)&&(!lef||s_pt(lef,',',s_ltef,h))&&(!lif||!s_pt(lif,',',
+s_ltef,h)))return 'e';return ''}function s_lc(e){s_lnk=3Ds_co(this)
+s_gs('');s_lnk=3D'';if(this.s_oc)return this.s_oc(e);return true}
+function s_ls(){var l,ln,oc;for(ln=3D0;ln<s_d.links.length;ln++){l=3D
+s_d.links[ln];oc=3Dl.onclick?l.onclick.toString():'';if(oc.indexOf(
+"s_gs(")<0&&oc.indexOf("s_lc(")<0){l.s_oc=3Dl.onclick;l.onclick=3Ds_lc}}}=
+
+function s_bc(e){s_eo=3De.srcElement?e.srcElement:e.target;s_gs('')
+s_eo=3D''}function s_ot(o){var a=3Do.type,b=3Do.tagName;return (a&&
+a.toUpperCase?a:b&&b.toUpperCase?b:o.href?'A':'').toUpperCase()}
+function s_oid(o){var =
+t=3Ds_ot(o),p=3Do.protocol,c=3Do.onclick,n=3D'',x=3D0;if(
+!o.s_oid){if(o.href&&(t=3D=3D'A'||t=3D=3D'AREA')&&(!c||!p||p.toLowerCase(=
+
+).indexOf('javascript')<0))n=3Do.href;else if(c){n=3Ds_rep(s_rep(s_rep(
+s_rep(c.toString(),"\r",''),"\n",''),"\t",''),' ','');x=3D2}else if(
+o.value&&(t=3D=3D'INPUT'||t=3D=3D'SUBMIT')){n=3Do.value;x=3D3}else =
+if(o.src&&t=3D=3D
+'IMAGE')n=3Do.src;if(n){o.s_oid=3Ds_fl(n,100);o.s_oidt=3Dx}}return =
+o.s_oid}
+function s_rqf(t,un){var =
+e=3Dt.indexOf('=3D'),u=3De>=3D0?','+t.substring(0,e)
++',':'';return u&&u.indexOf(','+un+',')>=3D0?s_epa(t.substring(e+1)):''}
+function s_rq(un){var =
+c=3Dun.indexOf(','),v=3Ds_c_r('s_sq'),q=3D'';if(c<0)
+return s_pt(v,'&',s_rqf,un);return s_pt(un,',',s_rq,0)}var s_sqq,s_squ
+function s_sqp(t,a){var =
+e=3Dt.indexOf('=3D'),q=3De<0?'':s_epa(t.substring(e
++1));s_sqq[q]=3D'';if(e>=3D0)s_pt(t.substring(0,e),',',s_sqs,q);return =
+0}
+function s_sqs(un,q){s_squ[un]=3Dq;return 0}function s_sq(un,q){s_sqq=3D
+new Object;s_squ=3Dnew Object;s_sqq[q]=3D'';var =
+k=3D's_sq',v=3Ds_c_r(k),x,c=3D0
+s_pt(v,'&',s_sqp,0);s_pt(un,',',s_sqs,q);v=3D'';for(x in s_squ)s_sqq[
+s_squ[x]]+=3D(s_sqq[s_squ[x]]?',':'')+x;for(x in s_sqq)if(x&&s_sqq[x]&&(
+x=3D=3Dq||c<2)){v+=3D(v?'&':'')+s_sqq[x]+'=3D'+s_ape(x);c++}return =
+s_c_w(k,v,0
+)}function s_wdl(e){s_wd.s_wd_l=3D1;var =
+r=3Dtrue;if(s_wd.s_ol)r=3Ds_wd.s_ol(
+e);if(s_wd.s_ls)s_wd.s_ls();return r}function s_wds(un){un=3D
+un.toLowerCase();s_wd.s_wd_l=3D1;if(s_apv>3&&(!s_isie||!s_ismac||s_apv>=3D=
+
+5)){s_wd.s_wd_l=3D0;if(!s_wd.s_unl)s_wd.s_unl=3Dnew Array;s_wd.s_unl[
+s_wd.s_unl.length]=3Dun;if(s_d.body&&s_d.body.attachEvent){if(
+!s_wd.s_bcr&&s_d.body.attachEvent('onclick',s_bc))s_wd.s_bcr=3D1}
+else if(s_d.body&&s_d.body.addEventListener){if(!s_wd.s_bcr&&
+s_d.body.addEventListener('click',s_bc,false))s_wd.s_bcr=3D1}else{var
+ol=3Ds_wd.onload?s_wd.onload.toString():'';if(ol.indexOf("s_wdl(")<0){
+s_wd.s_ol=3Ds_wd.onload;s_wd.onload=3Ds_wdl}}}}function s_iepf(i,a){if(
+i.substring(0,1)!=3D'{')i=3D'{'+i+'}';if(s_d.body.isComponentInstalled(i,=
+
+'ComponentID')){var n=3Ds_pl.length;s_pl[n]=3Dnew =
+Object;s_pl[n].name=3Di
++':'+s_d.body.getComponentVersion(i,'ComponentID')}return 0}
+function s_vs(un,x){var s=3Ds_gg('visitorSampling'),g=3Ds_gg(
+'visitorSamplingGroup'),k=3D's_vsn_'+un+(g?'_'+g:''),n=3Ds_c_r(k),e=3D
+new Date,y=3De.getYear();e.setYear(y+10+(y<1900?1900:0));if(s){s*=3D100
+if(!n){if(!s_c_w(k,x,e))return 0;n=3Dx}if(n%10000>s)return 0}return 1}
+function s_dyasmf(t,m){if(t&&m&&m.indexOf(t)>=3D0)return 1;return 0}
+function s_dyasf(t,m){var =
+i=3Dt?t.indexOf('=3D'):-1,un,s;if(i>=3D0&&m){var
+un=3Dt.substring(0,i),s=3Dt.substring(i+1);if(s_pt(s,',',s_dyasmf,m))
+return un}return 0}function s_dyas(un,l,m){if(!m)m=3Ds_wd.location.host
+if(!m.toLowerCase)m=3Dm.toString();l=3Dl.toLowerCase();m=3Dm.toLowerCase(=
+)
+var nun=3Ds_pt(l,';',s_dyasf,m);if(nun)return nun;return un}
+function s_gs(un){un=3Dun.toLowerCase()
+var dyas=3Ds_gg('dynamicAccountSelection'),dyal=3Ds_gg(
+'dynamicAccountList'),dyam=3Ds_gg('dynamicAccountMatch');if(dyas&&dyal)
+un=3Ds_dyas(un,dyal,dyam);
+s_un=3Dun;var trk=3D1,tm=3Dnew Date,sed=3DMath&&Math.random?Math.floor(
+Math.random()*10000000000000):tm.getTime(),sess=3D's'+Math.floor(
+tm.getTime()/10800000)%10+sed,yr=3Dtm.getYear(),tfs=3Ds_gtfs(),t,ta=3D'',=
+q=3D
+'',qs=3D'';yr=3Dyr<1900?yr+1900:yr;t=3Dtm.getDate()+'/'+tm.getMonth()+'/'=
++yr
++' '+tm.getHours()+':'+tm.getMinutes()+':'+tm.getSeconds()+' '
++tm.getDay()+' '+tm.getTimezoneOffset();if(!s_q){var tl=3Dtfs.location,
+s=3D'',c=3D'',v=3D'',p=3D'',bw=3D'',bh=3D'',j=3D'1.0',k=3Ds_c_w('s_cc','t=
+rue',0)?'Y':
+'N',hp=3D'',ct=3D'',iepl=3Ds_gg('iePlugins'),pn=3D0,ps;if(s_apv>=3D4)s=3D=
+
+screen.width+'x'+screen.height;if(s_isns||s_isopera){if(s_apv>=3D3){j=3D
+'1.1';v=3Ds_n.javaEnabled()?'Y':'N';if(s_apv>=3D4){j=3D'1.2';c=3D
+screen.pixelDepth;bw=3Ds_wd.innerWidth;bh=3Ds_wd.innerHeight;if(s_apv>=3D=
+
+4.06)j=3D'1.3'}}s_pl=3Ds_n.plugins}else if(s_isie){if(s_apv>=3D4){v=3D
+s_n.javaEnabled()?'Y':'N';j=3D'1.2';c=3Dscreen.colorDepth;if(s_apv>=3D5){=
+bw=3D
+s_d.documentElement.offsetWidth;bh=3Ds_d.documentElement.offsetHeight;j=3D=
+
+'1.3';if(!s_ismac&&s_d.body){s_d.body.addBehavior("#default#homePage")
+hp=3Ds_d.body.isHomePage(tl)?"Y":"N";s_d.body.addBehavior(
+"#default#clientCaps");ct=3Ds_d.body.connectionType;if(iepl){s_pl=3D
+new Array;s_pt(iepl,',',s_iepf,'');}}}}else =
+r=3D'';if(!s_pl&&iepl)s_pl=3D
+s_n.plugins}if(s_pl)while(pn<s_pl.length&&pn<30){ps=3Ds_fl(s_pl[pn
+].name,100)+';';if(p.indexOf(ps)<0)p+=3Dps;pn++}s_q=3D(s?'&s=3D'+s_ape(s)=
+:''
+)+(c?'&c=3D'+s_ape(c):'')+(j?'&j=3D'+j:'')+(v?'&v=3D'+v:'')+(k?'&k=3D'+k:=
+'')+(
+bw?'&bw=3D'+bw:'')+(bh?'&bh=3D'+bh:'')+(ct?'&ct=3D'+s_ape(ct):'')+(hp?'&h=
+p=3D'
++hp:'')+(s_vb?'&vb=3D'+s_vb:'')+(p?'&p=3D'+s_ape(p):'')}if(s_gg(
+'usePlugins'))s_wd.s_doPlugins();var l=3Ds_wd.location,r=3D
+tfs.document.referrer;if(!s_gg("pageURL"))s_wd.s_pageURL=3Ds_fl(l?l:'',
+255);if(!s_gg("referrer"))s_wd.s_referrer=3Ds_fl(r?r:'',255);q+=3D(t?'&t=3D=
+'
++s_ape(t):'')+s_hav();if(s_lnk||s_eo){var o=3Ds_eo?s_eo:s_lnk;if(!o)
+return '';var =
+p=3Ds_wd.s_g_pageName,w=3D1,t=3Ds_ot(o),n=3Ds_oid(o),x=3Do.s_oidt,
+h,l,i,oc;if(s_eo&&o=3D=3Ds_eo){while(o&&!n&&t!=3D'BODY'){o=3Do.parentElem=
+ent?
+o.parentElement:o.parentNode;if(!o)return =
+'';t=3Ds_ot(o);n=3Ds_oid(o);x=3D
+o.s_oidt}oc=3Do.onclick?o.onclick.toString():'';if(oc.indexOf("s_gs(")>=3D=
+
+0)return =
+''}ta=3Do.target;h=3Do.href?o.href:'';i=3Dh.indexOf('?');h=3Ds_gg(
+'linkLeaveQueryString')||i<0?h:h.substring(0,i);l=3Ds_gg('linkName')?
+s_gg('linkName'):s_ln(h);t=3Ds_gg('linkType')?s_gg('linkType'
+).toLowerCase():s_lt(h);if(t&&(h||l))q+=3D'&pe=3Dlnk_'+(t=3D=3D'd'||t=3D=3D=
+'e'?
+s_ape(t):'o')+(h?'&pev1=3D'+s_ape(h):'')+(l?'&pev2=3D'+s_ape(l):'');else
+trk=3D0;if(s_gg('trackInlineStats')){if(!p){p=3Ds_wd.s_g_pageURL;w=3D0}t=3D=
+
+s_ot(o);i=3Do.sourceIndex;if(s_gg('objectID')){n=3Ds_gg('objectID');x=3D1=
+;i=3D
+1}if(p&&n&&t)qs=3D'&pid=3D'+s_ape(s_fl(p,255))+(w?'&pidt=3D'+w:'')+'&oid=3D=
+'
++s_ape(s_fl(n,100))+(x?'&oidt=3D'+x:'')+'&ot=3D'+s_ape(t)+(i?'&oi=3D'+i:'=
+')}
+s_wd.s_linkName=3Ds_wd.s_linkType=3Ds_wd.s_objectID=3Ds_lnk=3Ds_eo=3D'';i=
+f(
+!s_wd.s_disableLegacyVars)s_wd.linkName=3Ds_wd.linkType=3Ds_wd.objectID=3D=
+''
+}if(!trk&&!qs)return '';var =
+code=3D'';if(un){if(trk&&s_vs(un,sed))code+=3D
+s_mr(un,sess,q+(qs?qs:s_rq(un)),ta);s_sq(un,trk?'':qs)}else if(
+s_wd.s_unl)for(var unn=3D0;unn<s_wd.s_unl.length;unn++){un=3Ds_wd.s_unl[
+unn];if(trk&&s_vs(un,sed))code+=3Ds_mr(un,sess,q+(qs?qs:s_rq(un)),ta)
+s_sq(un,trk?'':qs)}return code}function s_dc(un){un=3Dun.toLowerCase()
+var dyas=3Ds_gg('dynamicAccountSelection'),dyal=3Ds_gg(
+'dynamicAccountList'),dyam=3Ds_gg('dynamicAccountMatch');if(dyas&&dyal)
+un=3Ds_dyas(un,dyal,dyam);
+s_wds(un);s_ca(un);return s_gs(un)}
+s_code=3Ds_dc(s_account);if(s_code)s_d.write(s_code)
+
+------=_NextPart_000_000D_01C5F437.56C58110
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mathworks.com/includes/jscript/footer.js
+
+if (window.menu_script_loaded) {=0A=
+var complete_html =3D printMenus();=0A=
+makeMenus();=0A=
+}
+------=_NextPart_000_000D_01C5F437.56C58110--

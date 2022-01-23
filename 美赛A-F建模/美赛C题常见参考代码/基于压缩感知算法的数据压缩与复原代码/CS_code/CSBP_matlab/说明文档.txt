@@ -1,0 +1,129 @@
+Compressive sensing via belief propagation software 
+--------------------------------------------------------------------------------
+This webpage describes the Matlab files used to simulate our CS-BP algorithm: compressive sensing decoding via belief propagation. Technical details appear in our paper, 
+D. Baron, S. Sarvotham, and R. G. Baraniuk, "Bayesian Compressive Sensing via Belief Propagation," submitted for publication (pdf). 
+The code was rewritten by Danny Bickson in March 2009; his implementation appears here. 
+This project presents an O(N log^2(N)) decoder using two contributions. 
+First, we use CS-LDPC encoding matrices, which consist mostly of zeros, where nonzero entries are {-1,+1}. 
+Second, we incorporate a prior on the signal model (and possible measurement noise model) via belief propagation (BP),
+a well-known technique for performing approximate Bayesian inference. Our specific example mostly use 
+a two-state mixture Gaussian signal model, but other models can be incorporated in the code. 
+
+Our implementation uses samples of probability density functions (pdf's) as messages. To compute convolution of messages, the fast Fourier transform (FFT) is used. A significant percentage of CPU time is spent on FFT's, and the code can be accelerated using a message length that factors well. 
+
+Some commentary must be provided on choice of message lengths. In the paper, we recommend that spacing of samples be at least as fine as sigma_0, （抽样的间隔最小是sigma_0，即窄高斯分布的标准差）
+the stadard deviation of the narrow Gaussian mixture component. 
+Some of the messages reflect distributions of measurements, which may combine several large coefficients. （一些信息反应测量的分布，其中可能联合几个大系数）
+For example, some of our simulations used L=20 and S=K/N=0.1, which implies that on average L*S=2 larger coefficients are captured per message, but some messages may contain 5 or 6 larger coefficients. Consequntly, some messages have amplitudes exceeding 5*sigma_1; limiting the absolute magnitude of messages to 5*sigma_1 degrades reconstruction quality somewhat. Instead, the range (-10*sigma_1,+10*sigma_1) offers better quality. Because our simulations use sigma_1=10*sigma_0, choosing approximately 200 samples makes sense. As noted before, the message length should factor well for fast FFT computation. Also, message length must be odd (an artifact of the implementation), （抽样数必须是奇数，为了适应快速FFT。）and so we chose 243. 
+
+
+Several files below illustrate how to use our package. The recommended usage is illustrated by main.m. 
+First, the sparse signal must be generated; generatex_noisy.m can be used to do so, but any vector signal will do.  
+Second, the LDPC-CS encoding matrix must be generated using gen_phi.M. The matrix is not an actual matrix but uses a special format. 
+Third, driver_function.m is called. Another way to use our package is shown by sims1c.m, sims2d.m, sims3b.m, and sims4b,m; 
+these files run driver.m, which is a script file. 
+
+Any comments will be appreciated. 
+
+Dror Baron, December 2008 
+
+
+--------------------------------------------------------------------------------
+Significant routines The following routines were written by Shriram Sarvotham, Dror added some comments. 
+
+main.m: initializes parameters, generates signal, generates Phi measurement matrix, and runs driver_function.m. 
+This file is a demonstration of how to run the entire CS-BP technique. Additional examples appear below, where we include files used to generate the figures in our paper.
+ 
+driver.m: create auxiliary data structures, encode, decode （产生辅助数据结构）
+
+driver_function.m: same as driver.m but more convenient to use, because it is a function. The inputs are: 
+本函数的一些输入
+n - length of signal （信号长度） 
+K - number of large coefficients （大系数的数目） 
+l - number of ones per row in LDPC-CS matrix （行重）
+phi - encoding matrix structure （编码矩阵）
+phisign - signs of nonzero matrix entries （非0矩阵元素的符号）
+x - actual signal （实际信号）
+SNR - input SNR （输入信噪比）
+sigma_1 - large signal coefficients 
+sigma_0 - small coefficients 
+sigma_Z - measurement noise （测量的噪声）
+iter - number of BP iterations 
+p - number of samples （抽样数目）
+gamma_mdbpf, gamma_mdbpb, gamma_pdbp - parameters used for damping （阻尼）
+The single output is mrecon, （信号的估计值）the estimated value of the signal.
+ 
+decoder.m: initializations, then iterates.（先初始化，再迭代） 
+Forward iteration: （处理邻节点，卷积从测量到信号的pdf）processes neighbors, convolves their pdf's going from the measurements to the signal. 
+Backward: from signal to measurements (opposite direction of message direction). 
+Any extension of CS-BP to use more sophisticated signal and noise models must incorporate them in this file. 
+
+--------------------------------------------------------------------------------
+Simulations that appear in paper 
+In order to help other researchers reproduce our numerical results, we include the files used to generate our figures. 
+
+sims1c.m: runs CS-BP for different M and L, where N=1000, K=100, iter=15, SNR=100, and the measurements are noiseless. 
+sims2d.m: compares CS-BP, ell_1 reconstruction based on linear programming (LP), and CoSaMP for N=500, K=25, L=30, iter=15, SNR=100, and noiseless measurements. 
+
+sims3b.m: CS-BP reconstruction from noisy measurements. N=1000, K=100, iter=15, SNR=100, and several noise levels are evaluated. 
+sims4b.m: CS-BP reconstruction of mixture Gaussian signals with 2-, 3-, 4-, and 5- components. As the number of components is increased, MMSE also increases. N=1000, K=100, iter=15, SNR=100, and noiseless measurements are used. 
+sims_graphs.m: generates graphs that appear in the paper. This file reads data files generated by the four simsX.m files above; these data files are available on request. 
+
+--------------------------------------------------------------------------------
+Other reconstruction techniques used 
+Our simulations compared CS-BP to CoSaMP and ell_1 decoding. The files used were sent to us by Justin Romberg and Volkan Cevher. 
+
+
+--------------------------------------------------------------------------------
+Minor functions 
+We now list various minor functions. Many of these can be easily implemented using standard Matlab routines. However, some of the standard Matlab routines contain code for protecting against incorrect usage, which is immaterial here and slows things down. It might be possible to accelerate the code by inlining some of the function calls. 
+
+convpdf.m: （求a，b的卷积）Inputs: a, b; Output: conv(a,b). 
+
+convpdf_fft.m: （）Inputs: a, b, epsilon; Output: a.*fft(b). 
+
+dispvec_anderrors.m: Inputs: v, phi, phisign, measvec, dispind, x; Output: compares y and xhat*phi; Runs: encoder.m. 
+
+divpdf.m: Inputs: a, b; Output: a./b normalized. 
+
+divpdf_log.m: Inputs: a, b; Output: a-log(b). 
+
+encoder.m: Inputs: phiind, phisign, x; Output: uses phisign to encode Phi*x. 
+
+fftshift_shri.m: Inputs: p1; Output: like ifftshift_shri but other direction. 
+
+genphi.m: Inputs: n, l, r; Output: generates phi matrix. 
+
+generatex_noisy.m: Inputs: N, K, sig_signal, sig_noise. Output: x (signal) of length N contains K Gaussian coefficients with standard deviation sig_signal, while remaining coefficients are Gaussian with standard deviation sig_noise. 
+
+heavyind - location of actual signal. 
+
+get_aux.m: Inputs: phi, phisign, n, l, r. Output: creates auxiliary data structure aux - which row each measurement is mapped to. 
+sum_aux （每列的非0数）- nonzeros per column. 
+
+getSelfindices.m: Inputs: phi, aux. Output: comparison of rows/columns of phi and aux selfindexM. selfindexN. 
+
+Runs: setdiff_shri. 
+gmean.m: Inputs: a, b, gamma, epsilon; Output: gamma-weighted pdf mixture with normalization. 
+
+ifftshift_shri.m: Inputs: p1; Output: runs fftshift on p1 but with a shift left by one. 
+
+meanpdf.m: Inputs: pdf, xx; Output: E_pdf(xx). 
+
+meanvarmaxpdf.m: Inputs: pdf, xx; Output: e2=Std_pdf[xx] (pdf used as weights). 
+
+mulpdf.m: Inputs: a, b; Output: a.*b normalized. 
+
+mulpdf_log.m: Inputs: a, b; Output: a+log(b). 
+
+normpdf.m: Inputs: x, mu, sigma; Output: N(my,sigma) pdf sampled at locations x; Note: this is standard matlab code. 
+
+reverse.m: Inputs: ip, m; Output: [ip(1) ip(m:-1:2)]. 
+
+setdiff_shri.m: Inputs: vec, elem; Output: setdiff(vec,elem) where order in set counts. 
+
+shiftpdf.m: Inputs: p1, s, delta, mo; Output: shifts p1 (no flipping of L and R parts) then normalization. 
+
+shiftpdf_fft.m: Inputs: p1, shiftamt, delta, mo; Output: cyclic shift of p1 followed by normalization so it looks like a pdf. 
+
+unconvpdf_fft.m: Inputs: a, b, epsilon; Output: a./(fft(b)+epsilon). 
